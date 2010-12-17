@@ -1,0 +1,206 @@
+<flash_project version="1" name="STEM">
+  <project_folder expanded="true" name="Stage 13 - Current">
+    <project_file path=".DS_Store" filetype="ds_store"/>
+    <project_file path=".flashProjectProperties" filetype="flashprojectproperties"/>
+    <project_file path="._.flashProjectProperties" filetype="flashprojectproperties"/>
+    <project_file path="._main.swf" filetype="swf"/>
+    <project_file path="AC_RunActiveContent.js" filetype="js"/>
+    <project_folder expanded="false" name="data">
+      <project_file path="data/.DS_Store" filetype="ds_store"/>
+      <project_file path="data/._.DS_Store" filetype="ds_store"/>
+      <project_file path="data/._people.new.xml" filetype="xml"/>
+      <project_file path="data/._people.xml" filetype="xml"/>
+      <project_file path="data/people.new.xml" filetype="xml"/>
+      <project_file path="data/people.xml" filetype="xml"/>
+    </project_folder>
+    <project_file path="DOCS.rtf" filetype="rtf"/>
+    <project_folder expanded="false" name="helper">
+      <project_file path="helper/Help.as" filetype="as"/>
+      <project_file path="helper/Helper.as" filetype="as"/>
+      <project_file path="helper/HelperModel.as" filetype="as"/>
+      <project_file path="helper/HelperView.as" filetype="as"/>
+    </project_folder>
+    <project_file path="imsmanifest.xml" filetype="xml"/>
+    <project_file path="index.html" filetype="html"/>
+    <project_file path="main.fla" filetype="fla"/>
+    <project_file path="main.html" filetype="html"/>
+    <project_file path="main.swf" filetype="swf"/>
+    <project_folder expanded="false" name="media">
+      <project_file path="media/.DS_Store" filetype="ds_store"/>
+      <project_file path="media/._.DS_Store" filetype="ds_store"/>
+      <project_folder expanded="false" name="characters">
+        <project_file path="media/characters/.DS_Store" filetype="ds_store"/>
+        <project_file path="media/characters/._.DS_Store" filetype="ds_store"/>
+        <project_file path="media/characters/._simone.swf" filetype="swf"/>
+        <project_file path="media/characters/alastair.fla" filetype="fla"/>
+        <project_file path="media/characters/alastair.swf" filetype="swf"/>
+        <project_file path="media/characters/alicia.fla" filetype="fla"/>
+        <project_file path="media/characters/alicia.swf" filetype="swf"/>
+        <project_file path="media/characters/alison.fla" filetype="fla"/>
+        <project_file path="media/characters/alison.swf" filetype="swf"/>
+        <project_file path="media/characters/andrew.fla" filetype="fla"/>
+        <project_file path="media/characters/andrew.swf" filetype="swf"/>
+        <project_file path="media/characters/belinda.fla" filetype="fla"/>
+        <project_file path="media/characters/belinda.swf" filetype="swf"/>
+        <project_file path="media/characters/bob.fla" filetype="fla"/>
+        <project_file path="media/characters/bob.swf" filetype="swf"/>
+        <project_file path="media/characters/boldguy.fla" filetype="fla"/>
+        <project_file path="media/characters/boldguy.swf" filetype="swf"/>
+        <project_file path="media/characters/claudia.fla" filetype="fla"/>
+        <project_file path="media/characters/claudia.swf" filetype="swf"/>
+        <project_file path="media/characters/eliza.fla" filetype="fla"/>
+        <project_file path="media/characters/eliza.swf" filetype="swf"/>
+        <project_file path="media/characters/emma.fla" filetype="fla"/>
+        <project_file path="media/characters/emma.swf" filetype="swf"/>
+        <project_file path="media/characters/eskimo joe.fla" filetype="fla"/>
+        <project_file path="media/characters/eskimo joe.swf" filetype="swf"/>
+        <project_file path="media/characters/eskimojoe.fla" filetype="fla"/>
+        <project_file path="media/characters/eskimojoe.swf" filetype="swf"/>
+        <project_file path="media/characters/evon.fla" filetype="fla"/>
+        <project_file path="media/characters/fred.fla" filetype="fla"/>
+        <project_file path="media/characters/fred.swf" filetype="swf"/>
+        <project_file path="media/characters/jamaicanguy.fla" filetype="fla"/>
+        <project_file path="media/characters/jamaicanguy.swf" filetype="swf"/>
+        <project_file path="media/characters/james.fla" filetype="fla"/>
+        <project_file path="media/characters/james.swf" filetype="swf"/>
+        <project_file path="media/characters/jane.fla" filetype="fla"/>
+        <project_file path="media/characters/jane.swf" filetype="swf"/>
+        <project_file path="media/characters/jenna.fla" filetype="fla"/>
+        <project_file path="media/characters/jenna.swf" filetype="swf"/>
+        <project_file path="media/characters/joe.fla" filetype="fla"/>
+        <project_file path="media/characters/joe.swf" filetype="swf"/>
+        <project_file path="media/characters/john.fla" filetype="fla"/>
+        <project_file path="media/characters/john.swf" filetype="swf"/>
+        <project_file path="media/characters/jonathon.fla" filetype="fla"/>
+        <project_file path="media/characters/jonathon.swf" filetype="swf"/>
+        <project_file path="media/characters/kate.fla" filetype="fla"/>
+        <project_file path="media/characters/kate.swf" filetype="swf"/>
+        <project_file path="media/characters/kirsten.fla" filetype="fla"/>
+        <project_file path="media/characters/kirsten.swf" filetype="swf"/>
+        <project_file path="media/characters/martin.fla" filetype="fla"/>
+        <project_file path="media/characters/martin.swf" filetype="swf"/>
+        <project_file path="media/characters/matilda.fla" filetype="fla"/>
+        <project_file path="media/characters/matilda.swf" filetype="swf"/>
+        <project_file path="media/characters/michelle.fla" filetype="fla"/>
+        <project_file path="media/characters/michelle.swf" filetype="swf"/>
+        <project_folder expanded="false" name="mouthanimation">
+          <project_file path="media/characters/mouthanimation/femalemouthanim1.fla" filetype="fla"/>
+          <project_file path="media/characters/mouthanimation/femalemouthanim1.swf" filetype="swf"/>
+          <project_file path="media/characters/mouthanimation/femalemouthanim2.fla" filetype="fla"/>
+          <project_file path="media/characters/mouthanimation/malemouthanim1.fla" filetype="fla"/>
+        </project_folder>
+        <project_file path="media/characters/natasha.fla" filetype="fla"/>
+        <project_file path="media/characters/natasha.swf" filetype="swf"/>
+        <project_file path="media/characters/rebecca.fla" filetype="fla"/>
+        <project_file path="media/characters/rebecca.swf" filetype="swf"/>
+        <project_file path="media/characters/samuel.fla" filetype="fla"/>
+        <project_file path="media/characters/samuel.swf" filetype="swf"/>
+        <project_file path="media/characters/sasha.fla" filetype="fla"/>
+        <project_file path="media/characters/sasha.swf" filetype="swf"/>
+        <project_file path="media/characters/simone.fla" filetype="fla"/>
+        <project_file path="media/characters/simone.swf" filetype="swf"/>
+      </project_folder>
+      <project_folder expanded="false" name="drawings">
+        <project_folder expanded="false" name="full">
+          <project_file path="media/drawings/full/bowl.jpg" filetype="jpg"/>
+          <project_file path="media/drawings/full/chair.jpg" filetype="jpg"/>
+          <project_file path="media/drawings/full/floorlight.jpg" filetype="jpg"/>
+          <project_file path="media/drawings/full/pendant.jpg" filetype="jpg"/>
+          <project_file path="media/drawings/full/pot.jpg" filetype="jpg"/>
+          <project_file path="media/drawings/full/ring.jpg" filetype="jpg"/>
+          <project_file path="media/drawings/full/shell.jpg" filetype="jpg"/>
+          <project_file path="media/drawings/full/walllight.jpg" filetype="jpg"/>
+        </project_folder>
+        <project_folder expanded="false" name="thumbs">
+          <project_file path="media/drawings/thumbs/bowl.jpg" filetype="jpg"/>
+          <project_file path="media/drawings/thumbs/chair.jpg" filetype="jpg"/>
+          <project_file path="media/drawings/thumbs/floorlight.jpg" filetype="jpg"/>
+          <project_file path="media/drawings/thumbs/pendant.jpg" filetype="jpg"/>
+          <project_file path="media/drawings/thumbs/pot.jpg" filetype="jpg"/>
+          <project_file path="media/drawings/thumbs/ring.jpg" filetype="jpg"/>
+          <project_file path="media/drawings/thumbs/shell.jpg" filetype="jpg"/>
+          <project_file path="media/drawings/thumbs/walllight.jpg" filetype="jpg"/>
+        </project_folder>
+      </project_folder>
+      <project_folder expanded="false" name="interface">
+        <project_file path="media/interface/.DS_Store" filetype="ds_store"/>
+        <project_file path="media/interface/._.DS_Store" filetype="ds_store"/>
+        <project_file path="media/interface/._whiteboard.fla" filetype="fla"/>
+        <project_file path="media/interface/._whiteboard.swf" filetype="swf"/>
+        <project_file path="media/interface/bookshelf.fla" filetype="fla"/>
+        <project_file path="media/interface/drawingpad.fla" filetype="fla"/>
+        <project_file path="media/interface/drawingpad.swf" filetype="swf"/>
+        <project_file path="media/interface/Interface.fla" filetype="fla"/>
+        <project_file path="media/interface/interface.old.fla" filetype="fla"/>
+        <project_file path="media/interface/Interface.swf" filetype="swf"/>
+        <project_file path="media/interface/intro.fla" filetype="fla"/>
+        <project_file path="media/interface/intro.swf" filetype="swf"/>
+        <project_file path="media/interface/whiteboard.fla" filetype="fla"/>
+        <project_file path="media/interface/whiteboard.swf" filetype="swf"/>
+      </project_folder>
+      <project_folder expanded="false" name="logo">
+        <project_file path="media/logo/Blueskylogo.ai" filetype="ai"/>
+      </project_folder>
+      <project_file path="media/ReadyBackground.swf" filetype="swf"/>
+      <project_folder expanded="false" name="rooms">
+        <project_file path="media/rooms/.DS_Store" filetype="ds_store"/>
+        <project_file path="media/rooms/._.DS_Store" filetype="ds_store"/>
+        <project_file path="media/rooms/._library.swf" filetype="swf"/>
+        <project_file path="media/rooms/bigdesignoffice.fla" filetype="fla"/>
+        <project_file path="media/rooms/bigworkshop.fla" filetype="fla"/>
+        <project_file path="media/rooms/bookshelf.fla" filetype="fla"/>
+        <project_file path="media/rooms/dedicatedworkshop.fla" filetype="fla"/>
+        <project_file path="media/rooms/foyer.fla" filetype="fla"/>
+        <project_file path="media/rooms/foyer.swf" filetype="swf"/>
+        <project_file path="media/rooms/library.fla" filetype="fla"/>
+        <project_file path="media/rooms/library.swf" filetype="swf"/>
+        <project_file path="media/rooms/workshopdesignoffice.fla" filetype="fla"/>
+      </project_folder>
+    </project_folder>
+    <project_folder expanded="false" name="pipwerks">
+      <project_file path="pipwerks/SCORM.as" filetype="as"/>
+    </project_folder>
+    <project_file path="response-dev.fla" filetype="fla"/>
+    <project_file path="response-dev.swf" filetype="swf"/>
+    <project_file path="SCORM_API_wrapper.js" filetype="js"/>
+    <project_file path="Social Interactions.as3proj" filetype="as3proj"/>
+    <project_folder expanded="true" name="stem">
+      <project_folder expanded="false" name="controllers">
+        <project_file path="stem/controllers/LoaderXML.as" filetype="as"/>
+        <project_file path="stem/controllers/Report.as" filetype="as"/>
+        <project_file path="stem/controllers/ReportSCORM.as" filetype="as"/>
+      </project_folder>
+      <project_file path="stem/Main.as" filetype="as"/>
+      <project_folder expanded="false" name="model">
+        <project_file path="stem/model/BuildState.as" filetype="as"/>
+        <project_file path="stem/model/Interaction.as" filetype="as"/>
+        <project_file path="stem/model/InteractionData.as" filetype="as"/>
+        <project_file path="stem/model/InteractionEvents.as" filetype="as"/>
+        <project_file path="stem/model/InteractionI.as" filetype="as"/>
+        <project_file path="stem/model/LoadManager.as" filetype="as"/>
+        <project_file path="stem/model/LogModel.as" filetype="as"/>
+        <project_file path="stem/model/LogModelAbstract.as" filetype="as"/>
+        <project_file path="stem/model/Model.as" filetype="as"/>
+        <project_file path="stem/model/ResponseModel.as" filetype="as"/>
+        <project_file path="stem/model/ScoreModel.as" filetype="as"/>
+      </project_folder>
+      <project_folder expanded="true" name="views">
+        <project_file path="stem/views/BuildViewState.as" filetype="as"/>
+        <project_file path="stem/views/ImageInteractionViewState.as" filetype="as"/>
+        <project_file path="stem/views/InteractionViewStateAbstract.as" filetype="as"/>
+        <project_file path="stem/views/ResponseView.as" filetype="as"/>
+        <project_file path="stem/views/ScoreView.as" filetype="as"/>
+        <project_file path="stem/views/SoundInteractionViewState.as" filetype="as"/>
+        <project_file path="stem/views/View.as" filetype="as"/>
+        <project_file path="stem/views/ViewStateI.as" filetype="as"/>
+      </project_folder>
+    </project_folder>
+    <project_file path="STEM" filetype=""/>
+    <project_file path="stem2" filetype=""/>
+    <project_file path="swfobject.js" filetype="js"/>
+    <project_folder expanded="false" name="util">
+      <project_file path="util/Background.as" filetype="as"/>
+      <project_file path="util/Layout.as" filetype="as"/>
+    </project_folder>
+  </project_folder>
+</flash_project>
