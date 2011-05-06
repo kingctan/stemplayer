@@ -22,8 +22,18 @@ pipwerks.SCORM.version = "1.2";
 <script type="text/javascript" src="swfobject.js"></script>
 <script type="text/javascript">
 window.onload = function(){
-	var so = new SWFObject("main.swf", "main", "600", "500", "9", "#000000");
-	so.write("flash");
+	//var so = new SWFObject("stem.swf", "main", "600", "500", "9", "#000000");
+	//so.write("flash");
+	
+	var flashvars = false;
+	var params = {};	
+	var attributes = {
+	  id: "myStem",
+	  name: "myStem"
+	};
+	
+	swfobject.embedSWF("stem.swf", "flash", "600", "500", "9.0.0","expressInstall.swf", flashvars, params, attributes);
+	
 }
 </script>
 </head>
