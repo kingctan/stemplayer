@@ -52,7 +52,7 @@ background of an interaction.
 <li> *src* Is the relative path for the background. This path is relative to the stem.swf file,
 not the stem.xml file in the data folder. The file can be in any image format that
 Flash supports, e.g. .swf, .jpg, .png. Because .swf files can be used, animation,
-sound and other interactions can be added to the background.</li><br>
+sound and other interactions can be added to the background.</li>
 <li> *x* The x position of the background. This is normally set to 0.</li>
 <li> *y* The y position of the background. This is normally set to 0.</li>
 </ul>
@@ -433,14 +433,14 @@ The response element is a container element for the list of choices the user is 
 <br>
 ==Attributes==
 <ul>
-<li> *x:* Sets the x position of the responses.</.li>
+<li> *x:* Sets the x position of the responses.</li>
 <li> *y:* Sets the y position of the responses.</li>
 <li> *width:* Sets the width of the responses.</li>
 <li> *height:* Sets the height of all the responses.</li>
 <li> *choiceheight:* Sets the height of the actual choices. This is useful when the choices are long and wrap across multiple lines.</li>
 </ul>
 ==Children==
-<a href="#choice">`<choice>'</a>
+<a href="#choice">`<choice>`</a>
 <h1 id ="choice">`<choice>`</h1>
 Syntax
 {{{
@@ -454,6 +454,11 @@ Syntax
 </responses>
 }}}
 ==Description==
-The choice element is the key element that shows what the choices are and where they go. The branch attribute controls which statement is shown next. <br>
+The *choice* element is the key element that shows what the choices are and where they go. The branch attribute controls which statement is shown next. <br>
 The statement element controls what is shown in the list of choices. <br>
 The score element controls how the choice is scored.<br>
+
+==Attributes==
+<ul>
+<li> *branch:* This is the number of the next statement. The actual positions are in the list of statements, not the id number you have defined. The other possible value is *end*. The end value means that the final score will be shown with the messages, and the interaction will be over.</li>
+</ul>
