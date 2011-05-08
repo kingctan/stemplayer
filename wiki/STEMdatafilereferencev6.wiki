@@ -61,9 +61,8 @@ sound and other interactions can be added to the background.</li><br>
 
 ==Parent==
 <space>
-<div id="messages">
+{anchor:myAnchor}
 <h1 id="messages">`<messages>`</h1>
-</div>
 Syntax
 {{{
 <messages>
@@ -103,6 +102,7 @@ normally set to 10.</li>
 
 ==Parent==
 <a href="#messages">messages</a>
+[#myAnchor]
 <h1 id="finalscore">`<finalscore>`</h1>
 Syntax
 {{{
