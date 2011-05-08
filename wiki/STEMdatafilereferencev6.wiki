@@ -115,13 +115,16 @@ The *finalscore* element controls the visual position of the score message, when
 messages are shown and what the score is labelled.
 
 ==Example==
+{{{
 <finalscore x="420" y="50" displayduring="yes">Progress</finalscore>
+}}}
 In this example, the score is shown in the top right hand corner with the word
 progress showing during the whole interaction.
 
 ==Example==
+{{{
 <finalscore x="420" y="50" displayduring="no">Score</finalscore>
-
+}}}
 The score is shown in the top right hand corner only when the end branch is
 chosen by the user and the word Score is used in the label.
 
