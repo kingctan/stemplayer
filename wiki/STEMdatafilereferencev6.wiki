@@ -61,7 +61,9 @@ sound and other interactions can be added to the background.</li><br>
 
 ==Parent==
 <space>
-<h1 name="messages">`<messages>`</h1>
+<div id="messages">
+<h1 id="messages">`<messages>`</h1>
+</div>
 Syntax
 {{{
 <messages>
