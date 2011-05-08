@@ -191,7 +191,7 @@ The *reports* element contains the report elements that define how the score is 
 
 
 ==Children==
-<a href="#report">`<report></a>
+<a href="#report">`<report>`</a>
 <h1 id="report">`<report>`</h1>
 Syntax
 {{{
@@ -309,3 +309,65 @@ The metaphor that STEM uses for its interactions is that there is a series of
 statements with reactions and responses. The idea is that STEM has a “reaction”,
 and then the user has the choice to “respond“.
 
+
+==Children==
+<a href="#statement">`<statement>`</a>
+<h1 id="statement">`<statement>`</h1>
+Syntax
+{{{
+<statements>
+  <statement id="0" name="intro" help=”0” x="200" y="80" >
+  <reaction >We are building a new house, a bit out of town and we need to know the cost of getting the power on</reaction>
+    <responses x="0" y="290" width="600" height="140" choiceheight="20">
+        <choice branch="1"><statement>Do you have pole out the front</statement>
+          <scores>
+            <factor name="Supplier Requirements" score="1"></factor>
+          </scores>
+        </choice>
+      </responses>
+  </statement>
+</statements>
+}}}
+==Description==
+The *statement* element is the container element for each stage of a branch.<br>
+==Attributes==
+<ul>
+<li> *id*: Each statement needs to be given an id number. These id numbers are used
+to make the link between which choice is made and what statement happens next. The id numbers need to start from 0. The order and id number statements need to be keep consistent, e.g. you canʼt have a statement with an id=0 at the end of the list of statements and expect it work.</li>
+<li> *name*: This is not used in STEM at this stage, but it giving each statement a name will make the file easier to read.</li>
+<li> *help*: Is optional and in most case isnʼt used. A setting such as help=”0” means that the help element at the position 0 of the helper element (which is later in the XML file) will be shown. This is often used when the user has made bad choice.</li>
+<li> *x*: Sets the x position of the statement.</li>
+<li> *y*: Sets the y position of the statement.</li>
+
+
+==Children==
+<a href="#reaction">`<reaction>`</a><br>
+<a href="#responses">`<responses>`</a>
+<h1 id="reaction">`<reaction>`</h1>
+Syntax
+{{{
+<statements>
+  <statement id="0" name="intro" x="200" y="80" >
+  <reaction >We are building a new house, a bit out of town and we need to know the cost of getting the power on</reaction>
+    <responses x="0" y="290" width="600" height="140" choiceheight="20">
+        <choice branch="1"><statement>Do you have pole out the front</statement>
+          <scores>
+            <factor name="Supplier Requirements" score="1"></factor>
+          </scores>
+        </choice>
+      </responses>
+  </statement>
+</statements>
+}}}
+==Description==
+The *reaction* element controls what is shown at each of the branches.<br>
+<br>
+The value reaction element placed in a text box contained in another image. The
+image is a ReactBackground.swf file, and this can be modified by changing the
+ReactBackground.fla file. The default is a speech bubble. Different media types can
+be used as attributes if that type is set in the *name* element.<br>
+<br>
+HTML text can be used as a value here as well if it's contained in *<![CDATA
+[“*`<HTML text goes here>`*"]]>*<br>
+<br>
+The x and y position is taken from the statement element.
