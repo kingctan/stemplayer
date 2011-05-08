@@ -194,7 +194,15 @@ reported at the end.
 WikiWordLink
 
 <br>
-[http://domain/page label]
+[yahoo.com label]
 
 <br>
-http://domain/page
+http://yahoo.com
+
+<br>
+
+#messages
+
+<br>
+
+[#messages]
