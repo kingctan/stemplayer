@@ -568,6 +568,5 @@ The *help* element contains feedback that can be given during the interaction. T
 <li> *colour:* Sets the colour of the text; this is an RBG colour in written in HEX.</li>
 </ul>
 
-[#stem]
-<br>
-[#stem link]
+
+[#stem <stem>]
