@@ -100,8 +100,8 @@ between the vertical elements.
 normally set to 10.</li>
 
 ==Parent==
-<messages>
-=<finalscore>=
+<a href="#messages">messages</a>
+<h1 id="finalscore">`<finalscore>`</h1>
 Syntax
 {{{
 <messages>
