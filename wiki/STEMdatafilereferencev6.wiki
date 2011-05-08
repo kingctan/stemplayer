@@ -370,4 +370,50 @@ be used as attributes if that type is set in the *name* element.<br>
 HTML text can be used as a value here as well if it's contained in *<![CDATA
 [“*`<HTML text goes here>`*"]]>*<br>
 <br>
-The x and y position is taken from the statement element.
+The x and y position is taken from the statement element.<br>
+
+
+==Example==
+{{{
+<reaction ><![CDATA[“<strong>Don’t speak to me like that</strong>"]]></reaction>
+}}}
+*Attributes - all are optional and depend on the type that has been set in the name.*
+<ul>
+<li> *image:* This is the relative path to an image file. The file type can be any image
+format that Flash supports. Not every statement needs an image; if an image is not
+defined for a statement then the last image used will remain.</li>
+</ul>
+==Example==
+{{{
+<reaction image="media/jill.jpg" >Hi </reaction>
+}}}
+In this example the image file jill.jpg is loaded and shown, and the text “Hi” is
+shown.<br>
+{{{
+<reaction image="media/jill_sayinghi.swf"> </reaction>
+}}}
+In this example the image file jill_sayinghi.swf is loaded and shown, but no text is
+shown. If the .swf has a timeline, the timeline is played before the responses are
+shown, e.g. .swf can be an animation lip-synced to audio.<br>
+<ul>
+<li> *video:* This is the relative path to a video file. The file type can be any video
+format that Flash supports.</li>
+</ul>
+==Example==
+{{{
+<reaction video="media/DockingSaw_OP_8_Never_walk_away_while_machine_is_running.f4v" ></reaction>
+}}}
+In this example, the video file
+DockingSaw_OP_8_Never_walk_away_while_machine_is_running.f4v is played
+before the responses are shown. There is no text shown. If the position or size of
+the video moves between statements, you may see a white flash.<br>
+<ul>
+<li> *sound:* This is the relative path to a sound file. The file type can be any sound
+format that Flash supports.</li>
+</ul>
+==Example==
+{{{
+<reaction sound="media/audio/1went_into_work_job_after40_years.mp3"></reaction>
+}}}
+In this example, the sound file 1went_into_work_job_after40_years.mp3 is played before
+the responses are shown. There is no text shown.
