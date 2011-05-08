@@ -48,11 +48,13 @@ interaction. Often, this is used to place an image of a room or other space in t
 background of an interaction.
 
 ==Attributes==
-*src Is the relative path for the background. This path is relative to the stem.swf file,
+<li> src Is the relative path for the background. This path is relative to the stem.swf file,
 not the stem.xml file in the data folder. The file can be in any image format that
 Flash supports, e.g. .swf, .jpg, .png. Because .swf files can be used, animation,
-sound and other interactions can be added to the background.
-•
+sound and other interactions can be added to the background.</li><br>
+
 ==Attributes==
-*x The x position of the background. This is normally set to 0.
-*y The y position of the background. This is normally set to 0.
+<ul>
+<li> x The x position of the background. This is normally set to 0.</li>
+<li> y The y position of the background. This is normally set to 0.</li>
+</ul>
