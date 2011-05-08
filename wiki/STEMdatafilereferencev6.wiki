@@ -9,7 +9,8 @@ appear in the stem.xml document. The class tree for the elements is shown below.
 <br>
 Because the files are in XML grammar and file format, tag names are casesensitive
 and must appear exactly as shown here: <br>
-
+{anchor:#anchor}
+{anchor:anchor}
 <h1 id="stem">`<stem>`</h1>
 Syntax
 {{{
@@ -187,22 +188,52 @@ Syntax
 </reports>
 }}}
 ==Description==
-The *reports* element contains the report elements that define how the score is
-reported at the end.
+The *reports* element contains the report elements that define how the score is reported at the end.
 
 
-WikiWordLink
-
+==Children==
+<a href="#report">`<report></a>
+<h1 id="report">`<report>`</h1>
+Syntax
+{{{
+<reports>
+  <report>scorm</report>
+</reports>
+}}}
+==Description==
+The *report* specifics how the score is reported. The default value is blank, and the score is only shown to the user.
 <br>
-[yahoo.com label]
+==Possible values==
+*scorm* - When this is set, the following is reported to the Learning Management System via SCORM:
+<ul>
+<li> The total final score.</li>
+<li> The score for each of the factors.</li>
+<li> The choices the users made.</li>
+</ul>
+For the SCORM reporting to work, the SCORM_API_wrapper.js needs to be
+included in the html. There is an example of how these dependencies work together in main.scorm.html.
+<br><br>
+This hasn't been extensively tested in multiple Learning Management Systems.<br>
+The reports element is also at the end of the setup section of the xml file.
 
-<br>
-http://yahoo.com
+==Children==
+<a href="#reports">`<reports>`</a>
+<h1 id="interaction">`<interaction>`</h1>
+Syntax
+{{{
+<interaction>
+</interaction>
+}}}
+==Description==
+The *interaction* element is a container element for the main elements that define the branches and choices. At the moment, STEM is set up for only one interaction element per XML file; in the future it may support multiple interactive elements. The first two children elements *name* and *visual* are setup elements.
 
-<br>
 
-#messages
 
-<br>
+WikiWordLink<br>
+[http:yahoo.com label]<br>
+http:yahoo.com<br>
 
-[#messages]
+
+[#anchor link]<br>
+#anchor<br>
+[#anchor]
