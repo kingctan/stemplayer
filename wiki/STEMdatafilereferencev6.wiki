@@ -14,7 +14,7 @@ and must appear exactly as shown here: <br>
 =STEM=
 `<stem>`
 <br>
-Syntax
+==Syntax==
 {{{
 <stem>
 </stem>
@@ -23,7 +23,7 @@ Syntax
 This is the root element; all other elements must be contained inside it.
 
 <h1 id="space">`<space>`</h1>
-Syntax
+==Syntax==
 {{{
 <space>
   <background src="media/foyer.swf" x="0" y="0"> </background>
@@ -37,7 +37,7 @@ element might be used to define rooms and other spaces.
 ==Children==
 <a href="#background">`<background>`</a>
 <h1 id="background">`<background>`</h1>
-Syntax
+==Syntax==
 {{{
 <space>
  <background src="media/foyer.swf" x="0" y="0"> </background>
@@ -62,7 +62,7 @@ sound and other interactions can be added to the background.</li>
 ==Parent==
 <a href="#space">`<space>`</a>
 <h1 id="messages">`<messages>`</h1>
-Syntax
+==Syntax==
 {{{
 <messages>
   <padding x="10"></padding>
@@ -79,7 +79,7 @@ feedback systems of STEM.
 <a href="#finalscore">`<finalscore>`</a><br>
 <a href="#finalfactors">`<finalfactors>`</a><br>
 <h1 id="padding">`<padding>`</h1>
-Syntax
+==Syntax==
 {{{
 <messages>
   <padding x="10"></padding>
@@ -99,7 +99,7 @@ between the vertical elements.
 ==Parent==
 <a href="#messages">`<messages>`</a>
 <h1 id="finalscore">`<finalscore>`</h1>
-Syntax
+==Syntax==
 {{{
 <messages>
   <padding x="10"></padding>
@@ -136,7 +136,7 @@ the end, it should be set to *displayduring=no*.</li>
 ==Parent==
 <a href="messages">`<messages>`</a>
 <h1 id="finalfactors">`<finalfactors>`</h1>
-Syntax
+==Syntax==
 {{{
 <messages>
   <padding x="10"></padding>
@@ -154,7 +154,7 @@ end, it should be set to *displayduring=no*.</li>
 ==Parent==
 <a href="#messages">`<messages>`</a>
 <h1 id="factors">`<factors>`</h1>
-Syntax
+==Syntax==
 {{{
 <factors>
   <factor>Customer Service</factor>
@@ -163,14 +163,14 @@ Syntax
 }}}
 ==Description==
 The *factors* element contains other elements that define how the scoring system
-works. Each choice a user makes has a score for each of the factors. This means that they might be able to make a choice that has a high score for customer service but is not technically correct. In that case, the score for the customer service factor would go up and the technical factor score would go down. The overall score is a combination of all the scores from all the factors. The report shown at the end shows how the user got on against factors. Every choice needs to be rated for all the factors.<br>
+works. Each choice a user makes has a score for each of the factors. This means that they might be able to make a choice that has a high score for customer service but is not technically correct. In that case, the score for the customer service factor would go up and the technical factor score would go down. The overall score is a combination of all the scores from all the factors. The report shown at the end shows how the user got on against factors. Every choice needs to be rated for all the factors.<br> 
 <br>
 There are no limits to the amount of factors, but 3 seems to be a good amount to work with.
 
 ==Children==
 <a href="#factor">`<factor>`</a>
 <h1 id="factor">`<factor>`</h1>
-Syntax
+==Syntax==
 {{{
   <factor>Technical</factor>
 }}}
@@ -180,7 +180,7 @@ The *factor* element simply contains the name of each of scoring factor. For mor
 ==Parent==
 <a href="#factors">`<factors>`</a>
 <h1 id="reports">`<reports>`</h1>
-Syntax
+==Syntax==
 {{{
 <reports>
   <report></report>
@@ -193,7 +193,7 @@ The *reports* element contains the report elements that define how the score is 
 ==Children==
 <a href="#report">`<report>`</a>
 <h1 id="report">`<report>`</h1>
-Syntax
+==Syntax==
 {{{
 <reports>
   <report>scorm</report>
@@ -218,7 +218,7 @@ The reports element is also at the end of the setup section of the xml file.
 ==Children==
 <a href="#reports">`<reports>`</a>
 <h1 id="interaction">`<interaction>`</h1>
-Syntax
+==Syntax==
 {{{
 <interaction>
 </interaction>
@@ -232,7 +232,7 @@ The *interaction* element is a container element for the main elements that defi
 <a href="#visual">`<visual>`</a>
 <a href="#statements">`<statements>`</a>
 <h1 id="name">`<name>`</h1>
-Syntax
+==Syntax==
 {{{
 <interaction>
   <name type ="image" ></name>
@@ -267,7 +267,7 @@ are no playback controls for video.</li>
 </ul>
 
 <h1 id="visual">`<visual>`</h1>
-Syntax
+==Syntax==
 {{{
 <interaction>
   <name type ="image" ></name>
@@ -287,7 +287,7 @@ The path to the file is relative to the stem.swf file. It is suggested that you 
 </ul>
 
 <h1 id="statements">`<statements>`</h1>
-Syntax
+==Syntax==
 {{{
 <statements>
   <statement id="0" name="intro" x="200" y="80" >
@@ -313,7 +313,7 @@ and then the user has the choice to “respond“.
 ==Children==
 <a href="#statement">`<statement>`</a>
 <h1 id="statement">`<statement>`</h1>
-Syntax
+==Syntax==
 {{{
 <statements>
   <statement id="0" name="intro" help=”0” x="200" y="80" >
@@ -335,7 +335,7 @@ The *statement* element is the container element for each stage of a branch.<br>
 <li> *id*: Each statement needs to be given an id number. These id numbers are used
 to make the link between which choice is made and what statement happens next. The id numbers need to start from 0. The order and id number statements need to be keep consistent, e.g. you canʼt have a statement with an id=0 at the end of the list of statements and expect it work.</li>
 <li> *name*: This is not used in STEM at this stage, but it giving each statement a name will make the file easier to read.</li>
-<li> *help*: Is optional and in most case isnʼt used. A setting such as help=”0” means that the help element at the position 0 of the helper element (which is later in the XML file) will be shown. This is often used when the user has made bad choice.</li>
+<li> *help*: Is optional and in most case isnʼt used. A setting such as help=”0” means that the help element at the position 0 of the helper element (which is later in the XML file) will be shown. This is often used when the user has made bad choice.</li> 
 <li> *x*: Sets the x position of the statement.</li>
 <li> *y*: Sets the y position of the statement.</li>
 </ul>
@@ -344,7 +344,7 @@ to make the link between which choice is made and what statement happens next. T
 <a href="#reaction">`<reaction>`</a><br>
 <a href="#responses">`<responses>`</a>
 <h1 id="reaction">`<reaction>`</h1>
-Syntax
+==Syntax==
 {{{
 <statements>
   <statement id="0" name="intro" x="200" y="80" >
@@ -418,7 +418,7 @@ format that Flash supports.</li>
 In this example, the sound file 1went_into_work_job_after40_years.mp3 is played before the responses are shown. There is no text shown.<br>
 
 <h1 id="responses">`<responses>`</h1>
-Syntax
+==Syntax==
 {{{
 <responses x="0" y="290" width="600" height="140"
 choiceheight="20">
@@ -444,7 +444,7 @@ The response element is a container element for the list of choices the user is 
 ==Children==
 <a href="#choice">`<choice>`</a>
 <h1 id ="choice">`<choice>`</h1>
-Syntax
+==Syntax==
 {{{
 <responses x="0" y="290" width="600" height="140" choiceheight="20">
   <choice branch="1"><statement>Look here, don’t talk to me like that </statement>
@@ -470,7 +470,7 @@ The score element controls how the choice is scored.<br>
 <a href="#scores">`<scores>`</a><br>
 <a href="#statement">`<statement>`</a>
 <h1 id="statement">`<statement>`</h1>
-Syntax
+==Syntax==
 {{{
 <responses x="0" y="290" width="600" height="140" choiceheight="20">
   <choice branch="1"><statement>Look here, don’t talk to me like that </statement>
@@ -490,7 +490,7 @@ The *statement* element is a container element for what appears in the list of c
 <statement ><![CDATA[“<img src=”media/angry_icon.jpg” >"]]></statement>
 }}}
 <h1 id="scores">`<scores>`</h1>
-Syntax
+==Syntax==
 {{{
 <responses x="0" y="290" width="600" height="140" choiceheight="20">
   <choice branch="1"><statement>Look here, don’t talk to me like that </statement>
@@ -508,7 +508,7 @@ Each choice needs to have a *`<scores>`* element that holds the scores for each 
 ==Children==
 <a href="#factor">`<factor>`</a>
 <h1 id="factor">`<factor>`</h1>
-Syntax
+==Syntax==
 {{{
 <responses x="0" y="290" width="600" height="140" choiceheight="20">
  <choice branch="1"><statement>Look here, don’t talk to me like that </statement>
@@ -528,7 +528,7 @@ For each choice, you need to define what the score is for each of the factors. T
 </ul>
 
 <h1 id="helper">`<helper>`</h1>
-Syntax
+==Syntax==
 {{{
 <helper>
 
@@ -544,7 +544,7 @@ The *helper* element is a container element that appears at the end of the docum
 ==Children==
 <a href="#help">`<help>`</a>
 <h1 id="help">`<help>`</h1>
-Syntax
+==Syntax==
 {{{
 <helper>
   <help id="0" type="text" x="100" y="100" width="300" height="20" background="0x000000" alpha =".8" color="0xFFFFFF">You shouldn't be  giving advice like that out without checking without first. </help>
