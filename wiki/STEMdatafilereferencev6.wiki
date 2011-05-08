@@ -11,8 +11,7 @@ appear in the stem.xml document. The class tree for the elements is shown below.
 Because the files are in XML grammar and file format, tag names are casesensitive
 and must appear exactly as shown here: <br>
 
-=STEM=
-`<stem>`
+=`<stem>`=
 <br>
 ==Syntax==
 {{{
@@ -569,4 +568,4 @@ The *help* element contains feedback that can be given during the interaction. T
 </ul>
 
 
-[#STEM <stem>]
+[#<stem> <stem>]
