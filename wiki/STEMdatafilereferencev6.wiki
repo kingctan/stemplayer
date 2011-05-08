@@ -75,9 +75,9 @@ The *message* element contains the other elements that control the scoring and
 feedback systems of STEM.
 
 ==Children==
-<a href="#padding">`<padding>`</a>
-<a href="#finalscore">`<finalscore>`</a>
-<a href="#finalfactors">`<finalfactors>`</a>
+<a href="#padding">`<padding>`</a><br>
+<a href="#finalscore">`<finalscore>`</a><br>
+<a href="#finalfactors">`<finalfactors>`</a><br>
 <h1 id="padding">`<padding>`</h1>
 Syntax
 {{{
