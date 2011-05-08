@@ -550,7 +550,7 @@ Syntax
 </helper>
 }}}
 ==Description==
-The help element contains feedback that can be given during the interaction. The attributes on the element control the appearance of the feedback.<br>
+The *help* element contains feedback that can be given during the interaction. The attributes on the element control the appearance of the feedback.<br>
 
 
 ==Attributes==
