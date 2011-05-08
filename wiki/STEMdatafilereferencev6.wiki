@@ -5,9 +5,8 @@ appear in the stem.xml document. The class tree for the elements is shown below.
 
 <img src="http://i1139.photobucket.com/albums/n545/blackzky8/element.png" width="549" height="324">
 
-<br>
 
-{anchor:myAnchor}
+
 <br>
 Because the files are in XML grammar and file format, tag names are casesensitive
 and must appear exactly as shown here: <br>
@@ -18,7 +17,9 @@ Syntax
 <stem>
 </stem>
 }}}
-
+{anchor:myAnchor}
+<br>
+[anchor:myAnchor]
 ==Description==
 This is the root element; all other elements must be contained inside it.
 
