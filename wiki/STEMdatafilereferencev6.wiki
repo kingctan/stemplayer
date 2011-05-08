@@ -82,7 +82,7 @@ feedback systems of STEM.
 Syntax
 {{{
 <messages>
-  <padding x="10"></padding>
+  *<padding x="10"></padding>*
   <finalscore x="420" y="50" displayduring="yes">Score</finalscore>
   <finalfactors display="no"></finalfactors>!
 </messages>
@@ -103,7 +103,7 @@ Syntax
 {{{
 <messages>
   <padding x="10"></padding>
-  <finalscore x="420" y="50" displayduring="yes">Score</finalscore>
+  *<finalscore x="420" y="50" displayduring="yes">Score</finalscore>*
   <finalfactors display="no"></finalfactors>
 </messages>
 }}}
@@ -123,12 +123,30 @@ progress showing during the whole interaction.
 <finalscore x="420" y="50" displayduring="no">Score</finalscore>
 }}}
 The score is shown in the top right hand corner only when the end branch is
-chosen by the user and the word Score is used in the label.
+chosen by the user and the word *Score* is used in the label.
 
 ==Attributes==
 <ul>
-<li>x The x position of the score.</li>
-<li>y The y position of the score.</li>
-<li> displayduring. This can be set to yes or no. If you only want the score to show at
-the end, it should be set to displayduring=no.</li>
+<li>*x* The x position of the score.</li>
+<li>*y* The y position of the score.</li>
+<li>*displayduring*. This can be set to yes or no. If you only want the score to show at
+the end, it should be set to *displayduring=no*.</li>
 </ul>
+
+==Parent==
+<a href="messages">`<messages>`</a>
+<h1 id="finalfactors">`<finalfactors>`</h1>
+Syntax
+{{{
+<messages>
+  <padding x="10"></padding>
+  <finalscore x="420" y="50" displayduring="yes">Score</finalscore>
+  *<finalfactors display="no"></finalfactors>*
+</messages>
+}}}
+==Description==
+The *finalfactors* element controls if feedback is given on how the user's choices performed against each of the factors that are defined. STEM will create simple bar graphs for each of these factors, at the end of the interaction. There is more about the factors feature of STEM below.
+
+==Attributes==
+<li> *display* This can be set to yes or no. If you only want the score to show at the
+end, it should be set to *displayduring=no*.</li>
