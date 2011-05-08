@@ -13,6 +13,7 @@ and must appear exactly as shown here: <br>
 
 =STEM=
 `<stem>`
+<br>
 Syntax
 {{{
 <stem>
@@ -568,4 +569,4 @@ The *help* element contains feedback that can be given during the interaction. T
 </ul>
 
 
-[#stem <stem>]
+[#STEM <stem>]
