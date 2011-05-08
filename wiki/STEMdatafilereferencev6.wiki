@@ -12,7 +12,6 @@ Because the files are in XML grammar and file format, tag names are casesensitiv
 and must appear exactly as shown here: <br>
 
 =`<stem>`=
-<br>
 ==Syntax==
 {{{
 <stem>
