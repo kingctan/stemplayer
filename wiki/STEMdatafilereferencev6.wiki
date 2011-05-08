@@ -33,7 +33,7 @@ The *space* element specifies where the interaction occurs. In a future version,
 element might be used to define rooms and other spaces.
 
 ==Children==
-<a href="#background">`<background>`</a>
+[#<background> <background>]
 =`<background>`=
 ==Syntax==
 {{{
@@ -58,7 +58,7 @@ sound and other interactions can be added to the background.</li>
 </ul>
 
 ==Parent==
-<a href="#space">`<space>`</a>
+[#<space> <space>]
 =`<messages>`=
 ==Syntax==
 {{{
@@ -73,9 +73,9 @@ The *message* element contains the other elements that control the scoring and
 feedback systems of STEM.
 
 ==Children==
-<a href="#padding">`<padding>`</a><br>
-<a href="#finalscore">`<finalscore>`</a><br>
-<a href="#finalfactors">`<finalfactors>`</a><br>
+[#<padding> <padding>]<br>
+[#<finalscore> <finalscore>]<br>
+[#<finalfactors> <finalfactors>]<br>
 =`<padding>`=
 ==Syntax==
 {{{
@@ -95,7 +95,7 @@ between the vertical elements.
 <li>*x* The amount of vertical padding between parts in the message box. This is normally set to 10.</li>
 
 ==Parent==
-<a href="#messages">`<messages>`</a>
+[#<messages> <messages>]
 =`<finalscore>`=
 ==Syntax==
 {{{
@@ -150,7 +150,7 @@ The *finalfactors* element controls if feedback is given on how the user's choic
 end, it should be set to *displayduring=no*.</li>
 
 ==Parent==
-<a href="#messages">`<messages>`</a>
+[#<messages> <messages>]
 =`<factors>`=
 ==Syntax==
 {{{
@@ -166,17 +166,17 @@ works. Each choice a user makes has a score for each of the factors. This means 
 There are no limits to the amount of factors, but 3 seems to be a good amount to work with.
 
 ==Children==
-<a href="#factor">`<factor>`</a>
+[#<factor> <factor>]
 =`<factor>`=
 ==Syntax==
 {{{
   <factor>Technical</factor>
 }}}
 ==Description==
-The *factor* element simply contains the name of each of scoring factor. For more about factors see <a href="#factors">'factors'</a> above.
+The *factor* element simply contains the name of each of scoring factor. For more about factors see [#<factors> factors] above.
 
 ==Parent==
-<a href="#factors">`<factors>`</a>
+[#<factors> <factors>]
 =`<reports>`=
 ==Syntax==
 {{{
@@ -189,7 +189,7 @@ The *reports* element contains the report elements that define how the score is 
 
 
 ==Children==
-<a href="#report">`<report>`</a>
+[#<report> <report>]
 =`<report>`=
 ==Syntax==
 {{{
@@ -214,7 +214,7 @@ This hasn't been extensively tested in multiple Learning Management Systems.<br>
 The reports element is also at the end of the setup section of the xml file.
 
 ==Children==
-<a href="#reports">`<reports>`</a>
+[#<reports> <reports>]
 =`<interaction>`=
 ==Syntax==
 {{{
@@ -226,9 +226,9 @@ The *interaction* element is a container element for the main elements that defi
 
 
 ==Children==
-<a href="#name">`<name>`</a>
-<a href="#visual">`<visual>`</a>
-<a href="#statements">`<statements>`</a>
+[#<name> <name>]<br>
+[#<visual> <visual>]<br>
+[#<statements> <statements>]<br>
 =`<name>`=
 ==Syntax==
 {{{
@@ -309,7 +309,7 @@ and then the user has the choice to “respond“.
 
 
 ==Children==
-<a href="#statement">`<statement>`</a>
+[#<statement> <statement>]
 =`<statement>`=
 ==Syntax==
 {{{
@@ -339,8 +339,8 @@ to make the link between which choice is made and what statement happens next. T
 </ul>
 
 ==Children==
-<a href="#reaction">`<reaction>`</a><br>
-<a href="#responses">`<responses>`</a>
+[#<reaction> <reaction>]<br>
+[#<responses> <responses>]
 =`<reaction>`=
 ==Syntax==
 {{{
@@ -440,7 +440,7 @@ The response element is a container element for the list of choices the user is 
 <li> *choiceheight:* Sets the height of the actual choices. This is useful when the choices are long and wrap across multiple lines.</li>
 </ul>
 ==Children==
-<a href="#choice">`<choice>`</a>
+[#<choice> <choice>]
 =`<choice>`=
 ==Syntax==
 {{{
@@ -465,8 +465,8 @@ The score element controls how the choice is scored.<br>
 
 
 ==Children==
-<a href="#scores">`<scores>`</a><br>
-<a href="#statement">`<statement>`</a>
+[#<scores> <scores>]<br>
+[#<statement> <statement>]
 =`<statement>`=
 ==Syntax==
 {{{
@@ -504,7 +504,7 @@ Each choice needs to have a *`<scores>`* element that holds the scores for each 
 
 
 ==Children==
-<a href="#factor">`<factor>`</a>
+[#<factor> <factor>]
 =`<factor>`=
 ==Syntax==
 {{{
@@ -540,7 +540,7 @@ The *helper* element is a container element that appears at the end of the docum
 
 
 ==Children==
-<a href="#help">`<help>`</a>
+[#<help> <help>]
 =`<help>`=
 ==Syntax==
 {{{
@@ -565,6 +565,3 @@ The *help* element contains feedback that can be given during the interaction. T
 <li> *alpha:* Sets the transparency of the element. Because the help element is often put on top of the other elements, this can useful.</li>
 <li> *colour:* Sets the colour of the text; this is an RBG colour in written in HEX.</li>
 </ul>
-
-<a href="#<stem>">`<background>`</a><br>
-[#<stem> <stem>]
