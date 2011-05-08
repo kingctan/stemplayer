@@ -33,7 +33,7 @@ The *space* element specifies where the interaction occurs. In a future version,
 element might be used to define rooms and other spaces.
 
 ==Children==
-<background>
+<a href="#background">`<background>`</a>
 <h1 id="background">`<background>`</h1>
 Syntax
 {{{
@@ -60,8 +60,7 @@ sound and other interactions can be added to the background.</li><br>
 </ul>
 
 ==Parent==
-<space>
-{anchor:myAnchor}
+<a href="#space">`<space>`</a>
 <h1 id="messages">`<messages>`</h1>
 Syntax
 {{{
@@ -76,11 +75,9 @@ The *message* element contains the other elements that control the scoring and
 feedback systems of STEM.
 
 ==Children==
-{{{
-<padding>
-<finalscore>
-<finalfactors>
-}}}
+<a href="#padding">`<padding>`</a>
+<a href="#finalscore">`<finalscore>`</a>
+<a href="#finalfactors">`<finalfactors>`</a>
 <h1 id="padding">`<padding>`</h1>
 Syntax
 {{{
@@ -97,11 +94,10 @@ elements are stacked vertically, and the padding element only controls the paddi
 between the vertical elements.
 
 ==Attributes==
-<li>*x* The amount of vertical padding between parts in the message box. This is
-normally set to 10.</li>
+<li>*x* The amount of vertical padding between parts in the message box. This is normally set to 10.</li>
 
 ==Parent==
-[Jump to Anchor|#myAnchor]
+<a href="#messages">`<messages>`</a>
 <h1 id="finalscore">`<finalscore>`</h1>
 Syntax
 {{{
