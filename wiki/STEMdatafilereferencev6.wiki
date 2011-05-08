@@ -265,3 +265,47 @@ are no playback controls for video.</li>
 </ul>
 </ul>
 </ul>
+
+<h1 id="visual">`<visual>`</h1>
+Syntax
+{{{
+<interaction>
+  <name type ="image" ></name>
+  <visual x="100" y="50">media/alison.swf</visual>
+  <statements>
+}}}
+==Description==
+The *visual* element is used to define what is shown when the interaction starts. The user clicks on this image, and then the statements start. This can be used to build introduction screens. If later responses don't define new images, then the image that has been set here stays for the whole interaction.<br>
+<br>
+The path to the file is relative to the stem.swf file. It is suggested that you keep all you images, sounds and video in the media folder.
+<br>
+==Attributes==
+<ul>
+<li> *x*: Sets the x position of the image.</li>
+<li> *y*: Sets the y position of the image.</li>
+<li> The height and width are taken from the source file. STEM does not resize images.</li>
+</ul>
+
+<h1 id="statements">`<statements>`</h1>
+Syntax
+{{{
+<statements>
+  <statement id="0" name="intro" x="200" y="80" >
+  <reaction >We are building a new house, a bit out of town and we need to know the cost of getting the power on</reaction>
+    <responses x="0" y="290" width="600" height="140" choiceheight="20">
+        <choice branch="1"><statement>Do you have pole out the front</statement>
+          <scores>
+            <factor name="Supplier Requirements" score="1"></factor>
+          </scores>
+        </choice>
+     </responses>
+  </statement>
+</statements>
+}}}
+==Description==
+The *statements* element is a container for each of the statements/branches. The order and id number statements need to be kept consistent, e.g. you can't have a statement with an id=0 at the end of the list of statements and it expect to work. The numbering system starts from 0.<br>
+<br>
+The metaphor that STEM uses for its interactions is that there is a series of
+statements with reactions and responses. The idea is that STEM has a “reaction”,
+and then the user has the choice to “respond“.
+
