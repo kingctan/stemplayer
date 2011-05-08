@@ -20,7 +20,7 @@ and must appear exactly as shown here: <br>
 ==Description==
 This is the root element; all other elements must be contained inside it.
 
-<h1 id="space">`<space>`</h1>
+=`<space>`=
 ==Syntax==
 {{{
 <space>
@@ -34,7 +34,7 @@ element might be used to define rooms and other spaces.
 
 ==Children==
 <a href="#background">`<background>`</a>
-<h1 id="background">`<background>`</h1>
+=`<background>`=
 ==Syntax==
 {{{
 <space>
@@ -59,7 +59,7 @@ sound and other interactions can be added to the background.</li>
 
 ==Parent==
 <a href="#space">`<space>`</a>
-<h1 id="messages">`<messages>`</h1>
+=`<messages>`=
 ==Syntax==
 {{{
 <messages>
@@ -76,7 +76,7 @@ feedback systems of STEM.
 <a href="#padding">`<padding>`</a><br>
 <a href="#finalscore">`<finalscore>`</a><br>
 <a href="#finalfactors">`<finalfactors>`</a><br>
-<h1 id="padding">`<padding>`</h1>
+=`<padding>`=
 ==Syntax==
 {{{
 <messages>
@@ -96,7 +96,7 @@ between the vertical elements.
 
 ==Parent==
 <a href="#messages">`<messages>`</a>
-<h1 id="finalscore">`<finalscore>`</h1>
+=`<finalscore>`=
 ==Syntax==
 {{{
 <messages>
@@ -133,7 +133,7 @@ the end, it should be set to *displayduring=no*.</li>
 
 ==Parent==
 <a href="messages">`<messages>`</a>
-<h1 id="finalfactors">`<finalfactors>`</h1>
+=`<finalfactors>`=
 ==Syntax==
 {{{
 <messages>
@@ -151,7 +151,7 @@ end, it should be set to *displayduring=no*.</li>
 
 ==Parent==
 <a href="#messages">`<messages>`</a>
-<h1 id="factors">`<factors>`</h1>
+=`<factors>`=
 ==Syntax==
 {{{
 <factors>
@@ -167,7 +167,7 @@ There are no limits to the amount of factors, but 3 seems to be a good amount to
 
 ==Children==
 <a href="#factor">`<factor>`</a>
-<h1 id="factor">`<factor>`</h1>
+=`<factor>`=
 ==Syntax==
 {{{
   <factor>Technical</factor>
@@ -177,7 +177,7 @@ The *factor* element simply contains the name of each of scoring factor. For mor
 
 ==Parent==
 <a href="#factors">`<factors>`</a>
-<h1 id="reports">`<reports>`</h1>
+=`<reports>`=
 ==Syntax==
 {{{
 <reports>
@@ -190,7 +190,7 @@ The *reports* element contains the report elements that define how the score is 
 
 ==Children==
 <a href="#report">`<report>`</a>
-<h1 id="report">`<report>`</h1>
+=`<report>`=
 ==Syntax==
 {{{
 <reports>
@@ -215,7 +215,7 @@ The reports element is also at the end of the setup section of the xml file.
 
 ==Children==
 <a href="#reports">`<reports>`</a>
-<h1 id="interaction">`<interaction>`</h1>
+=`<interaction>`=
 ==Syntax==
 {{{
 <interaction>
@@ -229,7 +229,7 @@ The *interaction* element is a container element for the main elements that defi
 <a href="#name">`<name>`</a>
 <a href="#visual">`<visual>`</a>
 <a href="#statements">`<statements>`</a>
-<h1 id="name">`<name>`</h1>
+=`<name>`=
 ==Syntax==
 {{{
 <interaction>
@@ -264,7 +264,7 @@ are no playback controls for video.</li>
 </ul>
 </ul>
 
-<h1 id="visual">`<visual>`</h1>
+=`<visual>`=
 ==Syntax==
 {{{
 <interaction>
@@ -284,7 +284,7 @@ The path to the file is relative to the stem.swf file. It is suggested that you 
 <li> The height and width are taken from the source file. STEM does not resize images.</li>
 </ul>
 
-<h1 id="statements">`<statements>`</h1>
+=`<statements>`=
 ==Syntax==
 {{{
 <statements>
@@ -310,7 +310,7 @@ and then the user has the choice to “respond“.
 
 ==Children==
 <a href="#statement">`<statement>`</a>
-<h1 id="statement">`<statement>`</h1>
+=`<statement>`=
 ==Syntax==
 {{{
 <statements>
@@ -341,7 +341,7 @@ to make the link between which choice is made and what statement happens next. T
 ==Children==
 <a href="#reaction">`<reaction>`</a><br>
 <a href="#responses">`<responses>`</a>
-<h1 id="reaction">`<reaction>`</h1>
+=`<reaction>`=
 ==Syntax==
 {{{
 <statements>
@@ -415,7 +415,7 @@ format that Flash supports.</li>
 }}}
 In this example, the sound file 1went_into_work_job_after40_years.mp3 is played before the responses are shown. There is no text shown.<br>
 
-<h1 id="responses">`<responses>`</h1>
+=`<responses>`=
 ==Syntax==
 {{{
 <responses x="0" y="290" width="600" height="140"
@@ -441,7 +441,7 @@ The response element is a container element for the list of choices the user is 
 </ul>
 ==Children==
 <a href="#choice">`<choice>`</a>
-<h1 id ="choice">`<choice>`</h1>
+=`<choice>`=
 ==Syntax==
 {{{
 <responses x="0" y="290" width="600" height="140" choiceheight="20">
@@ -467,7 +467,7 @@ The score element controls how the choice is scored.<br>
 ==Children==
 <a href="#scores">`<scores>`</a><br>
 <a href="#statement">`<statement>`</a>
-<h1 id="statement">`<statement>`</h1>
+=`<statement>`=
 ==Syntax==
 {{{
 <responses x="0" y="290" width="600" height="140" choiceheight="20">
@@ -487,7 +487,7 @@ The *statement* element is a container element for what appears in the list of c
 {{{
 <statement ><![CDATA[“<img src=”media/angry_icon.jpg” >"]]></statement>
 }}}
-<h1 id="scores">`<scores>`</h1>
+=`<scores>`=
 ==Syntax==
 {{{
 <responses x="0" y="290" width="600" height="140" choiceheight="20">
@@ -505,7 +505,7 @@ Each choice needs to have a *`<scores>`* element that holds the scores for each 
 
 ==Children==
 <a href="#factor">`<factor>`</a>
-<h1 id="factor">`<factor>`</h1>
+=`<factor>`=
 ==Syntax==
 {{{
 <responses x="0" y="290" width="600" height="140" choiceheight="20">
@@ -525,7 +525,7 @@ For each choice, you need to define what the score is for each of the factors. T
 <li> *score:* Each of the factors needs to have a score; this can be a positive or negative number.</li>
 </ul>
 
-<h1 id="helper">`<helper>`</h1>
+=`<helper>`=
 ==Syntax==
 {{{
 <helper>
@@ -541,7 +541,7 @@ The *helper* element is a container element that appears at the end of the docum
 
 ==Children==
 <a href="#help">`<help>`</a>
-<h1 id="help">`<help>`</h1>
+=`<help>`=
 ==Syntax==
 {{{
 <helper>
