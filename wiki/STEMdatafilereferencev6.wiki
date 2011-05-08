@@ -168,7 +168,7 @@ works. Each choice a user makes has a score for each of the factors. This means 
 There are no limits to the amount of factors, but 3 seems to be a good amount to work with.
 
 ==Children==
-<a href="#factor">`<factor>`</factor>
+<a href="#factor">`<factor>`</a>
 <h1 id="factor">`<factor>`</h1>
 Syntax
 {{{
@@ -176,3 +176,25 @@ Syntax
 }}}
 ==Description==
 The *factor* element simply contains the name of each of scoring factor. For more about factors see <a href="#factors">'factors'</a> above.
+
+==Parent==
+<a href="#factors">`<factors>`</a>
+<h1 id="reports">`<reports>`</h1>
+Syntax
+{{{
+<reports>
+  <report></report>
+</reports>
+}}}
+==Description==
+The *reports* element contains the report elements that define how the score is
+reported at the end.
+
+
+WikiWordLink
+
+<br>
+[http://domain/page label]
+
+<br>
+http://domain/page
