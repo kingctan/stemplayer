@@ -11,7 +11,7 @@ appear in the stem.xml document. The class tree for the elements is shown below.
 Because the files are in XML grammar and file format, tag names are casesensitive
 and must appear exactly as shown here: <br>
 
-<h1><a name="stem"></a>`<stem>`</h1>
+<a name="stem"></a>=`<stem>`=
 Syntax
 {{{
 <stem>
