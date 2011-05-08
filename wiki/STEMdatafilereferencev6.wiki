@@ -5,12 +5,13 @@ appear in the stem.xml document. The class tree for the elements is shown below.
 
 <img src="http://i1139.photobucket.com/albums/n545/blackzky8/element.png" width="549" height="324">
 
+<br>
 
+{anchor:myAnchor}
 <br>
 Because the files are in XML grammar and file format, tag names are casesensitive
 and must appear exactly as shown here: <br>
-{anchor:#anchor}
-{anchor:anchor}
+
 <h1 id="stem">`<stem>`</h1>
 Syntax
 {{{
@@ -234,6 +235,10 @@ WikiWordLink<br>
 http:yahoo.com<br>
 
 
-[#anchor link]<br>
-#anchor<br>
-[#anchor]
+[#myAnchorlink]<br>
+#myAnchor<br>
+[#myAnchor]<br>
+
+
+[#myAnchor]<br>
+[Anchor|#myAnchor]
