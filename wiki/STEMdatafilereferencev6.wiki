@@ -82,9 +82,9 @@ feedback systems of STEM.
 Syntax
 {{{
 <messages>
-  *<padding x="10"></padding>*
+  <padding x="10"></padding>
   <finalscore x="420" y="50" displayduring="yes">Score</finalscore>
-  <finalfactors display="no"></finalfactors>!
+  <finalfactors display="no"></finalfactors>
 </messages>
 }}}
 ==Description==
@@ -103,7 +103,7 @@ Syntax
 {{{
 <messages>
   <padding x="10"></padding>
-  *<finalscore x="420" y="50" displayduring="yes">Score</finalscore>*
+  <finalscore x="420" y="50" displayduring="yes">Score</finalscore>
   <finalfactors display="no"></finalfactors>
 </messages>
 }}}
@@ -141,7 +141,7 @@ Syntax
 <messages>
   <padding x="10"></padding>
   <finalscore x="420" y="50" displayduring="yes">Score</finalscore>
-  *<finalfactors display="no"></finalfactors>*
+  <finalfactors display="no"></finalfactors>
 </messages>
 }}}
 ==Description==
@@ -150,3 +150,19 @@ The *finalfactors* element controls if feedback is given on how the user's choic
 ==Attributes==
 <li> *display* This can be set to yes or no. If you only want the score to show at the
 end, it should be set to *displayduring=no*.</li>
+
+==Parent==
+<a href="#messages">`<messages>`</a>
+<h1 id="factors">`<factors>`</h1>
+Syntax
+{{{
+<factors>
+  <factor>Customer Service</factor>
+  <factor>Technical</factor>
+</factors>
+}}}
+==Description==
+The factors element contains other elements that define how the scoring system
+works. Each choice a user makes has a score for each of the factors. This means that they might be able to make a choice that has a high score for customer service but is not technically correct. In that case, the score for the customer service factor would go up and the technical factor score would go down. The overall score is a combination of all the scores from all the factors. The report shown at the end shows how the user got on against factors. Every choice needs to be rated for all the factors.
+There are no limits to the amount of factors, but 3 seems to be a good amount to work with.
+
