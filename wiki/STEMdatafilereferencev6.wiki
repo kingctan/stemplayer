@@ -17,7 +17,6 @@ Syntax
 <stem>
 </stem>
 }}}
-{anchor:myAnchor}
 ==Description==
 This is the root element; all other elements must be contained inside it.
 
@@ -49,10 +48,16 @@ interaction. Often, this is used to place an image of a room or other space in t
 background of an interaction.
 
 ==Attributes==
-  *  *src* Is the relative path for the background. This path is relative to the stem.swf file,not the stem.xml file in the data folder. The file can be in any image format that Flash supports, e.g. .swf, .jpg, .png. Because .swf files can be used, animation, sound and other interactions can be added to the background.
-  *  *x* The x position of the background. This is normally set to 0.
-  *  *y* The y position of the background. This is normally set to 0.
+<li> *src* Is the relative path for the background. This path is relative to the stem.swf file,
+not the stem.xml file in the data folder. The file can be in any image format that
+Flash supports, e.g. .swf, .jpg, .png. Because .swf files can be used, animation,
+sound and other interactions can be added to the background.</li><br>
 
+==Attributes==
+<ul>
+<li> *x* The x position of the background. This is normally set to 0.</li>
+<li> *y* The y position of the background. This is normally set to 0.</li>
+</ul>
 
 ==Parent==
 <a href="#space">`<space>`</a>
@@ -222,9 +227,41 @@ Syntax
 The *interaction* element is a container element for the main elements that define the branches and choices. At the moment, STEM is set up for only one interaction element per XML file; in the future it may support multiple interactive elements. The first two children elements *name* and *visual* are setup elements.
 
 
-
-
-
-
-[#messages|messae]<br>
-[#messages messae]<br>
+==Children==
+<a href="#name">`<name>`</a>
+<a href="#visual">`<visual>`</a>
+<a href="#statements">`<statements>`</a>
+<h1 id="name">`<name>`</h1>
+Syntax
+{{{
+<interaction>
+  <name type ="image" ></name>
+  <visual x="100" y="50">media/alison.swf</visual>
+}}}
+==Description==
+The *name* element is only used to define what type of media the interaction uses.<br>
+The actual value of the name is not used at the moment.
+==Attributes==
+<ul>
+<ul> <li>type</li>
+<ul> <li>The possible values for type are:</li>
+<ul>
+<li> *image:* This is the base for all the types of interaction. The file can be
+any image type that flash supports including .swf. If the image is
+an .swf, it will play at the end before the responses are shown. An
+example of how the image type is the based type is the sound type.
+When the sound element is defined, STEM still uses the base image
+that is defined in the visual element (see below). STEM will look for an
+image attribute in each reaction. If an image is not found with the
+reaction element, the image that is shown to the user will not be
+changed.</li>
+<li> *sound:* Means that a sound file such as .mp3 can be defined for
+each of the reactions. An image still needs be defined in the visual
+element.</li>
+<li> *video:* Means that a video file can be defined for each of the
+reactions. The video is played and then the choices are shown. There
+are no playback controls for video.</li>
+</ul>
+</ul>
+</ul>
+</ul>
