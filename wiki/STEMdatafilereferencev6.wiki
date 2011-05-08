@@ -10,7 +10,7 @@ appear in the stem.xml document. The class tree for the elements is shown below.
 Because the files are in XML grammar and file format, tag names are casesensitive
 and must appear exactly as shown here: <br>
 
-==<stem>===
+<h1 id="stem">`<stem>`</h1>
 Syntax
 {{{
 <stem>
@@ -20,7 +20,7 @@ Syntax
 ==Description==
 This is the root element; all other elements must be contained inside it.
 
-==<space>==
+<h1 id="space">`<space>`</h1>
 Syntax
 {{{
 <space>
@@ -34,7 +34,7 @@ element might be used to define rooms and other spaces.
 
 ==Children==
 <background>
-=<background>=
+<h1 id="background">`<background>`</h1>
 Syntax
 {{{
 <space>
@@ -61,7 +61,7 @@ sound and other interactions can be added to the background.</li><br>
 
 ==Parent==
 <space>
-=<messages>=
+<h1 id="messages">`<messages>`</h1>
 Syntax
 {{{
 <messages>
@@ -80,7 +80,7 @@ feedback systems of STEM.
 <finalscore>
 <finalfactors>
 }}}
-=<padding>=
+<h1 id="padding">`<padding>`</h1>
 Syntax
 {{{
 <messages>
