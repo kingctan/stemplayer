@@ -31,3 +31,28 @@ Syntax
 ==Description==
 The space element specifies where the interaction occurs. In a future version, this
 element might be used to define rooms and other spaces.
+
+==Children==
+<background>
+=<background>=
+Syntax
+{{{
+<space>
+ <background src="media/foyer.swf" x="0" y="0"> </background>
+</space>
+}}}
+
+==Description==
+The background element specifies the background image or media for the
+interaction. Often, this is used to place an image of a room or other space in the
+background of an interaction.
+
+==Attributes==
+*src Is the relative path for the background. This path is relative to the stem.swf file,
+not the stem.xml file in the data folder. The file can be in any image format that
+Flash supports, e.g. .swf, .jpg, .png. Because .swf files can be used, animation,
+sound and other interactions can be added to the background.
+•
+==Attributes==
+*x The x position of the background. This is normally set to 0.
+*y The y position of the background. This is normally set to 0.
