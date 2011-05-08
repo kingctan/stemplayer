@@ -338,7 +338,7 @@ to make the link between which choice is made and what statement happens next. T
 <li> *help*: Is optional and in most case isnʼt used. A setting such as help=”0” means that the help element at the position 0 of the helper element (which is later in the XML file) will be shown. This is often used when the user has made bad choice.</li>
 <li> *x*: Sets the x position of the statement.</li>
 <li> *y*: Sets the y position of the statement.</li>
-
+</ul>
 
 ==Children==
 <a href="#reaction">`<reaction>`</a><br>
