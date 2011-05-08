@@ -58,3 +58,43 @@ sound and other interactions can be added to the background.</li><br>
 <li> x The x position of the background. This is normally set to 0.</li>
 <li> y The y position of the background. This is normally set to 0.</li>
 </ul>
+
+==Parent==
+<space>
+=<messages>=
+Syntax
+{{{
+<messages>
+  <padding x="10"></padding>
+  <finalscore x="420" y="50" displayduring="yes">Score</finalscore>
+  <finalfactors display="no"></finalfactors>
+</messages>
+}}}
+==Description==
+The message element contains the other elements that control the scoring and
+feedback systems of STEM.
+
+==Children==
+{{{
+<padding>
+<finalscore>
+<finalfactors>
+}}}
+=<padding>=
+Syntax
+{{{
+<messages>
+  <padding x="10"></padding>
+  <finalscore x="420" y="50" displayduring="yes">Score</finalscore>
+  <finalfactors display="no"></finalfactors>!
+</messages>
+}}}
+==Description==
+The padding element controls how much visual space there is between each of the
+parts in final the feedback display, e.g. the bar charts show the scores. These
+elements are stacked vertically, and the padding element only controls the padding
+between the vertical elements.
+
+==Attributes==
+<li>x The amount of vertical padding between parts in the message box. This is
+normally set to 10.</li>
