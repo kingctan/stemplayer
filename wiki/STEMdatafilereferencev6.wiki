@@ -29,7 +29,7 @@ Syntax
 }}}
 
 ==Description==
-The space element specifies where the interaction occurs. In a future version, this
+The *space* element specifies where the interaction occurs. In a future version, this
 element might be used to define rooms and other spaces.
 
 ==Children==
@@ -43,20 +43,20 @@ Syntax
 }}}
 
 ==Description==
-The background element specifies the background image or media for the
+The *background* element specifies the background image or media for the
 interaction. Often, this is used to place an image of a room or other space in the
 background of an interaction.
 
 ==Attributes==
-<li> src Is the relative path for the background. This path is relative to the stem.swf file,
+<li> *src* Is the relative path for the background. This path is relative to the stem.swf file,
 not the stem.xml file in the data folder. The file can be in any image format that
 Flash supports, e.g. .swf, .jpg, .png. Because .swf files can be used, animation,
 sound and other interactions can be added to the background.</li><br>
 
 ==Attributes==
 <ul>
-<li> x The x position of the background. This is normally set to 0.</li>
-<li> y The y position of the background. This is normally set to 0.</li>
+<li> *x* The x position of the background. This is normally set to 0.</li>
+<li> *y* The y position of the background. This is normally set to 0.</li>
 </ul>
 
 ==Parent==
@@ -71,7 +71,7 @@ Syntax
 </messages>
 }}}
 ==Description==
-The message element contains the other elements that control the scoring and
+The *message* element contains the other elements that control the scoring and
 feedback systems of STEM.
 
 ==Children==
@@ -90,11 +90,45 @@ Syntax
 </messages>
 }}}
 ==Description==
-The padding element controls how much visual space there is between each of the
+The *padding* element controls how much visual space there is between each of the
 parts in final the feedback display, e.g. the bar charts show the scores. These
 elements are stacked vertically, and the padding element only controls the padding
 between the vertical elements.
 
 ==Attributes==
-<li>x The amount of vertical padding between parts in the message box. This is
+<li>*x* The amount of vertical padding between parts in the message box. This is
 normally set to 10.</li>
+
+==Parent==
+<messages>
+=<finalscore>=
+Syntax
+{{{
+<messages>
+  <padding x="10"></padding>
+  <finalscore x="420" y="50" displayduring="yes">Score</finalscore>
+  <finalfactors display="no"></finalfactors>
+</messages>
+}}}
+==Description==
+The *finalscore* element controls the visual position of the score message, when the
+messages are shown and what the score is labelled.
+
+==Example==
+<finalscore x="420" y="50" displayduring="yes">Progress</finalscore>
+In this example, the score is shown in the top right hand corner with the word
+progress showing during the whole interaction.
+
+==Example==
+<finalscore x="420" y="50" displayduring="no">Score</finalscore>
+
+The score is shown in the top right hand corner only when the end branch is
+chosen by the user and the word Score is used in the label.
+
+==Attributes==
+<ul>
+<li>x The x position of the score.</li>
+<li>y The y position of the score.</li>
+<li> displayduring. This can be set to yes or no. If you only want the score to show at
+the end, it should be set to displayduring=no.</li>
+</ul>
