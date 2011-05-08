@@ -101,7 +101,7 @@ between the vertical elements.
 normally set to 10.</li>
 
 ==Parent==
-[#myAnchor]
+[Jump to Anchor|#myAnchor]
 <h1 id="finalscore">`<finalscore>`</h1>
 Syntax
 {{{
