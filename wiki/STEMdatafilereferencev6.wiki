@@ -17,7 +17,6 @@ Syntax
 <stem>
 </stem>
 }}}
-{anchor:myAnchor}
 ==Description==
 This is the root element; all other elements must be contained inside it.
 
@@ -229,8 +228,3 @@ The *interaction* element is a container element for the main elements that defi
 
 
 
-
-
-
-[#messages|messae]<br>
-[#messages messae]<br>
