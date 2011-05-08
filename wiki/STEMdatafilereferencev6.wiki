@@ -524,3 +524,44 @@ For each choice, you need to define what the score is for each of the factors. T
 <li> *name:* This is the exact name of the factors.</li>
 <li> *score:* Each of the factors needs to have a score; this can be a positive or negative number.</li>
 </ul>
+
+<h1 id="helper">`<helper>`</h1>
+Syntax
+{{{
+<helper>
+
+  <help id="0" type="text" x="100" y="100" width="300" height="20" background="0x000000" alpha =".8" color="0xFFFFFF">You shouldn't be giving advice like that out without checking without first. </help>
+  <help id="1" x="200" y="200" width="100" height="110" background="0x000000" alpha =".8" color="0xFFFFFF"> That is not a suitable response</help>
+
+</helper>
+}}}
+==Description==
+The *helper* element is a container element that appears at the end of the document. It contains a series of help elements that can be shown during the interaction.<br>
+
+
+==Children==
+<a href="#help">`<help>`</a>
+<h1 id="help">`<help>`</h1>
+Syntax
+{{{
+<helper>
+  <help id="0" type="text" x="100" y="100" width="300" height="20" background="0x000000" alpha =".8" color="0xFFFFFF">You shouldn't be  giving advice like that out without checking without first. </help>
+  <help id="1" type="text" x="200" y="200" width="100" height="110" background="0x000000" alpha =".8" color="0xFFFFFF"> That is not a suitable response</help>
+</helper>
+}}}
+==Description==
+The help element contains feedback that can be given during the interaction. The attributes on the element control the appearance of the feedback.<br>
+
+
+==Attributes==
+<ul>
+<li> *id:* Is a number that reflects the help position in the helper element. This is the number that is used in the statement element.</li>
+<li> *type:* Currently the only type that has been implemented is the text type.</li>
+<li> *x:* Sets the x position of the help.</li>
+<li> *y:* Sets the y position of the help.</li>
+<li> *width:* Sets the width of the help.</li>
+<li> height: Sets the height of all the help.</li>
+<li> background: Sets the background colour of the help element; this is an RBG colour in written in HEX.</li>
+<li> *alpha:* Sets the transparency of the element. Because the help element is often put on top of the other elements, this can useful.
+<li> *colour:* Sets the colour of the text; this is an RBG colour in written in HEX.</li>
+</ul>
