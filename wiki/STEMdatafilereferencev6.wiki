@@ -162,7 +162,17 @@ Syntax
 </factors>
 }}}
 ==Description==
-The factors element contains other elements that define how the scoring system
-works. Each choice a user makes has a score for each of the factors. This means that they might be able to make a choice that has a high score for customer service but is not technically correct. In that case, the score for the customer service factor would go up and the technical factor score would go down. The overall score is a combination of all the scores from all the factors. The report shown at the end shows how the user got on against factors. Every choice needs to be rated for all the factors.
+The *factors* element contains other elements that define how the scoring system
+works. Each choice a user makes has a score for each of the factors. This means that they might be able to make a choice that has a high score for customer service but is not technically correct. In that case, the score for the customer service factor would go up and the technical factor score would go down. The overall score is a combination of all the scores from all the factors. The report shown at the end shows how the user got on against factors. Every choice needs to be rated for all the factors.<br>
+<br>
 There are no limits to the amount of factors, but 3 seems to be a good amount to work with.
 
+==Children==
+<a href="#factor">`<factor>`</factor>
+<h1 id="factor">`<factor>`</h1>
+Syntax
+{{{
+  <factor>Technical</factor>
+}}}
+==Description==
+The *factor* element simply contains the name of each of scoring factor. For more about factors see <a href="#factors">'factors'</a> above.
