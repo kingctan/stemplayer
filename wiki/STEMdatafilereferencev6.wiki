@@ -48,13 +48,11 @@ interaction. Often, this is used to place an image of a room or other space in t
 background of an interaction.
 
 ==Attributes==
+<ul>
 <li> *src* Is the relative path for the background. This path is relative to the stem.swf file,
 not the stem.xml file in the data folder. The file can be in any image format that
 Flash supports, e.g. .swf, .jpg, .png. Because .swf files can be used, animation,
 sound and other interactions can be added to the background.</li><br>
-
-==Attributes==
-<ul>
 <li> *x* The x position of the background. This is normally set to 0.</li>
 <li> *y* The y position of the background. This is normally set to 0.</li>
 </ul>
@@ -415,5 +413,47 @@ format that Flash supports.</li>
 {{{
 <reaction sound="media/audio/1went_into_work_job_after40_years.mp3"></reaction>
 }}}
-In this example, the sound file 1went_into_work_job_after40_years.mp3 is played before
-the responses are shown. There is no text shown.
+In this example, the sound file 1went_into_work_job_after40_years.mp3 is played before the responses are shown. There is no text shown.<br>
+
+<h1 id="responses">`<responses>`</h1>
+Syntax
+{{{
+<responses x="0" y="290" width="600" height="140"
+choiceheight="20">
+  <choice branch="1"><statement>Look here, don’t talk to me like that </statement>
+    <scores>
+    <factor name="Customers Services" score="-5"></factor>
+    <factor name="Sales" score="-5"></factor>
+    </scores>
+  </choice>
+</responses>
+}}}
+==Description==
+The response element is a container element for the list of choices the user is given at each stage. The choices are listed in a Flash List component. The attributes for the response element set the visual position, and the height and width of that list. The look and feel of this can be changed in the .fla in same way any Flash component can be styled.<br>
+<br>
+==Attributes==
+<ul>
+<li> *x:* Sets the x position of the responses.</.li>
+<li> *y:* Sets the y position of the responses.</li>
+<li> *width:* Sets the width of the responses.</li>
+<li> *height:* Sets the height of all the responses.</li>
+<li> *choiceheight:* Sets the height of the actual choices. This is useful when the choices are long and wrap across multiple lines.</li>
+</ul>
+==Children==
+<a href="#choice">`<choice>'</a>
+<h1 id ="choice">`<choice>`</h1>
+Syntax
+{{{
+<responses x="0" y="290" width="600" height="140" choiceheight="20">
+  <choice branch="1"><statement>Look here, don’t talk to me like that </statement>
+    <scores>
+    <factor name="Customers Services" score="-5"></factor>
+    <factor name="Sales" score="-5"></factor>
+    </scores>
+  </choice>
+</responses>
+}}}
+==Description==
+The choice element is the key element that shows what the choices are and where they go. The branch attribute controls which statement is shown next. <br>
+The statement element controls what is shown in the list of choices. <br>
+The score element controls how the choice is scored.<br>
