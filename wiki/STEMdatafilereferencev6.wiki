@@ -101,7 +101,6 @@ between the vertical elements.
 normally set to 10.</li>
 
 ==Parent==
-<a href="#messages">messages</a>
 [#myAnchor]
 <h1 id="finalscore">`<finalscore>`</h1>
 Syntax
