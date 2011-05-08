@@ -462,3 +462,65 @@ The score element controls how the choice is scored.<br>
 <ul>
 <li> *branch:* This is the number of the next statement. The actual positions are in the list of statements, not the id number you have defined. The other possible value is *end*. The end value means that the final score will be shown with the messages, and the interaction will be over.</li>
 </ul>
+
+
+==Children==
+<a href="#scores">`<scores>`</a><br>
+<a href="#statement">`<statement>`</a>
+<h1 id="statement">`<statement>`</h1>
+Syntax
+{{{
+<responses x="0" y="290" width="600" height="140" choiceheight="20">
+  <choice branch="1"><statement>Look here, don’t talk to me like that </statement>
+    <scores>
+    <factor name="Customers Services" score="-5"></factor>
+    <factor name="Sales" score="-5"></factor>
+    </scores>
+  </choice>
+</responses>
+}}}
+==Description==
+The *statement* element is a container element for what appears in the list of choices. The height of the element is defined in the choiceheight attribute of the responses element. The text inside this element can be HTML text and can be images. This is a simple way to make a list of image choices.<br>
+
+
+==Example==
+{{{
+<statement ><![CDATA[“<img src=”media/angry_icon.jpg” >"]]></statement>
+}}}
+<h1 id="scores">`<scores>`</h1>
+Syntax
+{{{
+<responses x="0" y="290" width="600" height="140" choiceheight="20">
+  <choice branch="1"><statement>Look here, don’t talk to me like that </statement>
+    <scores>
+    <factor name="Customers Services" score="-5"></factor>
+    <factor name="Sales" score="-5"></factor>
+    </scores>
+  </choice>
+</responses>
+}}}
+==Description==
+Each choice needs to have a *`<scores>`* element that holds the scores for each of the factor elements.<br>
+
+
+==Children==
+<a href="#factor">`<factor>`</a>
+<h1 id="factor">`<factor>`</h1>
+Syntax
+{{{
+<responses x="0" y="290" width="600" height="140" choiceheight="20">
+ <choice branch="1"><statement>Look here, don’t talk to me like that </statement>
+    <scores>
+    <factor name="Customers Services" score="-5"></factor>
+    <factor name="Sales" score="-5"></factor>
+    </scores>
+  </choice>
+</responses>
+}}}
+==Description==
+For each choice, you need to define what the score is for each of the factors. These are the factors that where defined at the start of the document in the factors element.
+==Attributes==
+<ul>
+<li> *name:* This is the exact name of the factors.</li>
+<li> *score:* Each of the factors needs to have a score; this can be a positive or negative number.</li>
+</ul>
