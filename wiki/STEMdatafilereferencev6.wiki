@@ -229,15 +229,8 @@ The *interaction* element is a container element for the main elements that defi
 
 
 
-WikiWordLink<br>
-[http:yahoo.com label]<br>
-http:yahoo.com<br>
 
 
-[#myAnchorlink]<br>
-#myAnchor<br>
-[#myAnchor]<br>
 
-
-[#myAnchor]<br>
-[Anchor|#myAnchor]
+[#messages|messae]<br>
+[#messages messae]<br>
