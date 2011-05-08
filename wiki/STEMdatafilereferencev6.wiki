@@ -4,8 +4,32 @@
 appear in the stem.xml document. The class tree for the elements is shown below.</p>
 
 <img src="http://i1139.photobucket.com/albums/n545/blackzky8/element.png" width="549" height="324">
+<br>
 
-
+=Stem Reference:=
+  * [[#<stem> stem]]
+    * [[#<space> space]]
+      * [#<background> background]
+    * [[#<message> message]]
+      * [#<padding> padding]
+      * [#<finalscore> finalscore]
+      * [#<finalfactors> finalfactors]
+    * [[#<factors> factors]]
+      * [#<factor> factor]
+    * [[#<reports> reports]]
+      * [#<report> report]
+    * [[#<interaction> interaction]]
+      * [#<name> name]
+      * [#<visual> visual]
+      * [[#<statements> statements]]
+        * [[#<statement> statement]]
+          * [#<reaction> reaction]
+          * [[#<responses> responses ]]
+            * [[#<choices> choices]]
+              * [[#<scores> scores]]
+                * [#<factor> factor]
+    * [[#<helper> helper]]
+      * [#<help> help]
 
 <br>
 Because the files are in XML grammar and file format, tag names are casesensitive
@@ -565,28 +589,3 @@ The *help* element contains feedback that can be given during the interaction. T
 <li> *alpha:* Sets the transparency of the element. Because the help element is often put on top of the other elements, this can useful.</li>
 <li> *colour:* Sets the colour of the text; this is an RBG colour in written in HEX.</li>
 </ul>
-
-=Stem Reference:=
-  * [#<stem> stem]
-    * [#<space> space]
-      * [#<background> background]
-    * [#<message> message]
-      * [#<padding> padding]
-      * [#<finalscore> finalscore]
-      * [#<finalfactors> finalfactors]
-    * [#<factors> factors]
-      * [#<factor> factor]
-    * [#<reports> reports]
-      * [#<report> report]
-    * [#<interaction> interaction]
-      * [#<name> name]
-      * [#<visual> visual]
-      * [#<statements> statements]
-        * [#<statement> statement]
-          * [#<reaction> reaction]
-          * [#<responses> responses ]
-            * [#<choices> choices]
-              * [#<scores> scores]
-                * [#<factor> factor]
-    * [#<helper> helper]
-      * [#<help> help]
