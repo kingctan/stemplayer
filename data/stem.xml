@@ -18,12 +18,11 @@
 
 <interaction>
 	<name type ="image" >Jane</name>
-	<visual  x="100" y="50">media/alison.swf</visual>
+	<visual  x="0" y="0">media/alison.swf</visual>
 
 	<statements>
-	 <statement id="0" name="intro"   x="200" y="80" >
-	 <!-- <reaction >We are building a new house, a bit out of town and we need to know the cost of getting the power on</reaction> -->	 
-	 <reaction x="400" y="230" anchor="bottomright"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </reaction>
+	 <statement id="0" name="intro" x="200" y="80" src="media/reaction-bg-1.swf">	 
+	 <reaction x="550" y="230" anchor="bottomright"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </reaction>
 	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
 				<choice branch="1"><statement>Do you have pole out the front</statement>
 					<scores>
@@ -34,7 +33,7 @@
 	 </statement>
 	
 	 <statement id="1"   name="intro"  x="200" y="80">
-	 <reaction x="400" y="230" anchor="bottomright" ><![CDATA["<strong>Reaction 1 2 3</strong> <em>EM</em>"]]></reaction>
+	 <reaction x="550" y="230" anchor="bottomright" ><![CDATA["<strong>Reaction 1 2 3</strong> <em>EM</em>"]]></reaction>
 	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
 				<choice branch="3"><statement>Do you get along with your neighbors ? maybe we could use their poles?
  </statement>
@@ -52,8 +51,8 @@
 			</responses>
 	 </statement>
 	 
- <statement id="2" name="intro"  x="200" y="80">
-	 <reaction x="400" y="230" anchor="bottomright">Well there is two poles, I think the one near the road is about 110m meters away.  We have some plans and other information that might be useful ?</reaction>
+ <statement id="2" name="intro"  x="200" y="80" src="media/reaction-bg-1.swf">
+	 <reaction x="550" y="230" anchor="bottomright">Well there is two poles, I think the one near the road is about 110m meters away.  We have some plans and other information that might be useful ?</reaction>
 	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
 				<choice branch="5"><statement>That great, I might need to come out have a look as well. </statement>
 					<scores>
@@ -66,7 +65,7 @@
 	 
 	
  <statement id="3" name="intro" x="200" y="80">
-	 <reaction x="400" y="230" anchor="bottomright">	Yes, we get along with them. I'm sure they would be Ok about it. There second pole is close to our house. That should make it cheaper. </reaction>
+	 <reaction x="550" y="230" anchor="bottomright">	Yes, we get along with them. I'm sure they would be Ok about it. There second pole is close to our house. That should make it cheaper. </reaction>
 	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
 	  
 	
@@ -89,7 +88,7 @@
 	 </statement> 
 	 
  <statement id="4" name="" x="200" y="80" >
-	 <reaction x="400" y="230" anchor="bottomright">That's great</reaction>
+	 <reaction x="550" y="230" anchor="bottomright">That's great</reaction>
 	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
 				<choice branch="end"><statement>OK,I'll have a look a the plans now. Goodbye</statement>
 					<scores>
@@ -100,7 +99,7 @@
 	 </statement> 
 
  <statement id="5" name="intro" x="200" y="80">
-	 <reaction x="400" y="230" anchor="bottomright">	Oh, so you can't tell how much it is over the phone ?</reaction>
+	 <reaction x="550" y="230" anchor="bottomright">	Oh, so you can't tell how much it is over the phone ?</reaction>
 	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
 		<choice branch="6"><statement>No I need to check with Aurora.  We need to fill out a Preliminary Enquiry form. </statement>
 					<scores>
@@ -113,7 +112,7 @@
 
 
  <statement id="6" name="intro" x="200" y="80">
-	 <reaction x="400" y="230" anchor="bottomright">OK, that sounds good. I'll have a look a the plans now. Goodbye </reaction>
+	 <reaction x="550" y="230" anchor="bottomright">OK, that sounds good. I'll have a look a the plans now. Goodbye </reaction>
 	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
 				<choice branch="end"><statement>Goodbye </statement>
 					<scores>
