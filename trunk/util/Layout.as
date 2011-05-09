@@ -42,24 +42,31 @@
 		 * @param	d - the XML data 
 		 * @return
 		 */
+		
 		public function SetPos(mc,d):Boolean
 		{
-		trace(mc);
-				var success:Boolean  = false; 	
+				
+			var success:Boolean  = false; 	
 			//start with the x 			
 			try 
 				{
 					mc.x = d.@x; 
 					success = true;
 					
-				} catch (e:ArgumentError) {   trace("error in the xml file") }; 
+				} catch (e:ArgumentError) {   
+					trace("error in the xml file") 
+					mc.x = 0;
+				}; 
 			//now try and do the y 
 			try 
 				{
 					mc.y = d.@y; 
 					success = true;
 					
-				} catch (e:ArgumentError) {   trace("error in the xml file") }; 
+				} catch (e:ArgumentError) {   
+					trace("error in the xml file")
+					mc.y = 0;
+				}; 
 				
 				
 			return success;   
