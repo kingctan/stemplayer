@@ -404,9 +404,17 @@ The x and y position is taken from the statement element.<br>
   * *image:* This is the relative path to an image file. The file type can be any image format that Flash supports. Not every statement needs an image; if an image is not defined for a statement then the last image used will remain.
   * *x:* The x position of the chat bubble
   * *y:* The y position of the chat bubble
-  * *anchor:* The point where the chat bubble will anchored.
+  * *anchor:* The point where the chat bubble will anchored. Accepted anchors are:
+    * topleft
+    * topright
+    * bottomleft
+    * bottomright
 
 ==Example==
+{{{
+<reaction x='100' y='50' anchor='bottomright' >Hi, How are you today?</reaction>
+}}}
+This example positions the chat bubble to x:100, y:50 and will anchor it to the bottom right<br>
 {{{
 <reaction image="media/jill.jpg" >Hi </reaction>
 }}}
