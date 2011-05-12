@@ -3,6 +3,7 @@
 <p>This section contains a reference for all STEM elements, in the order that they
 appear in the stem.xml document. The class tree for the elements is shown below.</p>
 
+[[File:element.png|thumb|alt=Stem Diagram|Stem Diagram]]
 <img src="http://i1139.photobucket.com/albums/n545/blackzky8/element.png" width="549" height="324">
 <br>
 
