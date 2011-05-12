@@ -15,7 +15,7 @@ package stem.controllers {
 		// Constructor
 		
 		public function LoaderXML()  {	
-			trace("just made our xmlLoader" ); 		
+			//trace("just made our xmlLoader" ); 		
 			
 		}
 		
@@ -28,7 +28,7 @@ package stem.controllers {
 		} 
 		
 		public function get Data():XML {
-			trace("get about return my Data"); 
+			//trace("get about return my Data"); 
 			return myData; 
 		} 
 		
@@ -39,7 +39,7 @@ package stem.controllers {
 		
 		private function Load() {
 			
-			trace("starting to load the xml"); 
+			//trace("starting to load the xml"); 
 			var loader:URLLoader = new URLLoader(); 
 			loader.addEventListener(Event.COMPLETE, handleComplete);
 			loader.addEventListener(ProgressEvent.PROGRESS, handleProgress); 
@@ -59,12 +59,12 @@ package stem.controllers {
 				
 				dispatchEvent(new Event(Event.COMPLETE));
 
-				trace("xml file loaded"); 
+				//trace("xml file loaded"); 
 
 				
 			} catch (e:TypeError) {
-				trace("there is a error in the XML file"); 	
-				trace(e.message); 
+				//trace("there is a error in the XML file"); 	
+				//trace(e.message); 
 			}
 		} 
 		

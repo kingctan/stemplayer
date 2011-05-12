@@ -20,14 +20,14 @@
 		private var aChildren:Array;
 
 		public function interactionViewState():void {
-			trace(" ----------- InteractionViewState has been made");
+			//trace(" ----------- InteractionViewState has been made");
 			//this.setup(m); //start the loading MIGHT need to back in somewhere else 
 			this.aChildren = new Array(); 
 		}
 
 
 		public function add(c):void {
-			trace(c);
+			//trace(c);
 			aChildren.push(c);
 			addChild(c);
 			//c.setup(m)

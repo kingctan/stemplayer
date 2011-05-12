@@ -43,7 +43,7 @@
 		
 		private function setupFactorScores():void //moved 
 		{
-			//trace("The lenght of factors is" + Factors.factor.length()); 		
+			////trace("The lenght of factors is" + Factors.factor.length()); 		
 			for (var i:Number = 0; i <factors.factor.length(); i++) {
 				myFactorsScores[factors.factor[i]] = 0; 				 
 			}
@@ -51,7 +51,7 @@
 	
 	public function UpDataScores(e:Event) { // expecting this to come from the responseModel 
 	
-		trace("------UPDATING SCORES------")
+		//trace("------UPDATING SCORES------")
 		
 		//Get the scores to start with 
 		var currentScores:Object = e.currentTarget.reportScores(); 
@@ -62,7 +62,7 @@
 		myScore += currentScores.Score; 
 		
 		myLog.update(currentScores.MyLabel);
-		//trace(myScore);
+		////trace(myScore);
 		
 		
 		
@@ -70,10 +70,10 @@
 		
 			for (var i:Number = 0; i <factors.factor.length(); i++) {
 			
-				trace("Updating Scores for this response " + factors.factor[i] + " the score is " + currentScores[factors.factor[i]]); 
+				//trace("Updating Scores for this response " + factors.factor[i] + " the score is " + currentScores[factors.factor[i]]); 
 				//now add that our data structure 
 				myFactorsScores[factors.factor[i]] = myFactorsScores[factors.factor[i]] + currentScores[factors.factor[i]]; 
-				trace(myFactorsScores[factors.factor[i]]); 
+				//trace(myFactorsScores[factors.factor[i]]); 
 			}
 			
 		
@@ -84,7 +84,7 @@
 	public function get FactorsScores():Object { return myFactorsScores; } //what get called by the score view
 
 	public function get MessageFinalScore():Number {
-		//trace(model);
+		////trace(model);
 		return model.myData.getMessageFinalScore;
 	
 		}

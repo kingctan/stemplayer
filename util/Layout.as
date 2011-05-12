@@ -19,13 +19,13 @@
 
 		//start with our width\
 		var per:Number = outsideMC.width * (marginPer /100) ; 
-		//trace("pppppppppppppp" + per + "==========="); 
+		////trace("pppppppppppppp" + per + "==========="); 
 		//top left 
 		insideMC.x = per;
 		insideMC.y = per; 
-		//trace(outsideMC.width); 
+		////trace(outsideMC.width); 
 		//top right/width 
-		//trace(outsideMC.width - (per * 2));
+		////trace(outsideMC.width - (per * 2));
 	//	insideMC.width = 90; 
 		insideMC.width = outsideMC.width - (per * 3); 
 		
@@ -54,7 +54,7 @@
 					success = true;
 					
 				} catch (e:ArgumentError) {   
-					trace("error in the xml file") 
+					//trace("error in the xml file") 
 					mc.x = 0;
 				}; 
 			//now try and do the y 
@@ -64,7 +64,7 @@
 					success = true;
 					
 				} catch (e:ArgumentError) {   
-					trace("error in the xml file")
+					//trace("error in the xml file")
 					mc.y = 0;
 				}; 
 				
@@ -93,14 +93,14 @@
 
 						success = true;
 				
-				} catch (e:ArgumentError) {   trace("error in the xml file") }; 
+				} catch (e:ArgumentError) {  }; 
 			//now try and do the y 
 			try 
 				{
 						mc.height = d.@height; 
 						success = true;
 					
-				} catch (e:ArgumentError) {   trace("error in the xml file") }; 
+				} catch (e:ArgumentError) { }; 
 				
 				
 			return success;   
@@ -117,14 +117,14 @@
 		 */
 		public function putUnder(top:MovieClip,under:MovieClip,padding:Number):void 
 		{
-			//trace("top.y = " + top.y); 
-			//trace("top.height = " + top.height); 
-			//trace("padding = " + padding); 
+			////trace("top.y = " + top.y); 
+			////trace("top.height = " + top.height); 
+			////trace("padding = " + padding); 
 			
 			under.y = top.y + top.height + padding; 
 			under.x = top.x; 
 			
-			//trace("under y" + under.y); 
+			////trace("under y" + under.y); 
 			//under.y = top.y + padding; 
 		}
 		

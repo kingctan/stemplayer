@@ -20,14 +20,14 @@
 
 
 		public function ReportSCORM () {
-			trace("just built the SCORM Report object"); 
+			//trace("just built the SCORM Report object"); 
 		
 		}
 
 						
 		override public function sendReport() {
 			
-			trace("report is to send a SCORM report sent"); 
+			//trace("report is to send a SCORM report sent"); 
 				
 				try {	
 					var scorm:SCORM = new SCORM();
@@ -55,7 +55,7 @@
 	
 				} else {
 
-					 trace("Could not connect to LMS.");
+					 //trace("Could not connect to LMS.");
 
 				}
 	
@@ -77,7 +77,7 @@
 			private function sendScore(scorm):void
 			{
 					 //Must tell LMS course has not been completed yet.
-					 trace("the score is " + this.Score); 
+					 //trace("the score is " + this.Score); 
 					//success = scorm.set("cmi.core.score.raw", this.Score);
 					
 					try { success = scorm.set("cmi.core.score.raw", this.Score)
@@ -93,13 +93,13 @@
 					var myFactorsScores = this.FactorScores; 
 			var myFactors = this.Factors; 
 			
-			//trace (myFactorsScores); 
-			//trace (myFactors); 
+			////trace (myFactorsScores); 
+			////trace (myFactors); 
 			
 						
 			for (var i:Number = 0; i < myFactors.factor.length(); i++) {
 							
-					trace("Send Scores " + myFactors.factor[i] + " the score is " + myFactorsScores[myFactors.factor[i]]); 
+					//trace("Send Scores " + myFactors.factor[i] + " the score is " + myFactorsScores[myFactors.factor[i]]); 
 
 									
 					var theFactor:String = myFactors.factor[i]; 

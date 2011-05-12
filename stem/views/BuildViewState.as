@@ -13,7 +13,7 @@
 	public class BuildViewState extends MovieClip
 	{
 		function BuildViewState(s) {
-			trace("n----------just created the Build View State"); 
+			//trace("n----------just created the Build View State"); 
 		}
 	}
 	
