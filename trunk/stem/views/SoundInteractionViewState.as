@@ -26,7 +26,7 @@
 
 		private var mode:String="debugNO";//when this set to debug you can skip thru the choices quickly  
 		public function SoundInteractionViewState(m,rc):void {
-			trace("######## Sound InteractionViewState has been made");
+			//trace("######## Sound InteractionViewState has been made");
 			this.setup(m,rc);//start the loading 
 
 		}
@@ -40,7 +40,7 @@
 		}
 
 		public function buildReady() {
-			trace("###### Building the sound");
+			//trace("###### Building the sound");
 
 			myStatementsSounds = new Array ();
 
@@ -54,35 +54,40 @@
 
 			while (i < model.myData.getStatementLength()) {
 
-				//trace(model.myData.getStatementAtasXML(i)); 
+				////trace(model.myData.getStatementAtasXML(i)); 
 				var statement:XML=model.myData.getStatementAtasXML(i);
 				i++;
 
-				//trace(statement);
+				////trace(statement);
 
 				for each (var bit:XML in statement) {
 					var currentReactions:Array = new Array();
 
 					for each (var react:XML in bit.reaction) {
 
-						trace(react.@sound.toString());
+						//trace(react.@sound.toString());
 
 						if (react.@sound.toString()!="") {
-							trace("yes it has a sound");
+							//trace("yes it has a sound");
 							var thisSound = new Sound();
 							thisSound.load(new URLRequest(react.@sound.toString()));
+							try { 
+								model.loadManager.add (thisSound);
+							} catch (e:Error) {
+								trace ( "An error occured while trying to load the sound.");
+							}
 							currentReactions.push(thisSound);
 						}
 
-						trace(currentReactions);
+						//trace(currentReactions);
 
 					}
 
 				}
 				myStatementsSounds.push(currentReactions);
 			}
-			trace("---------------");
-			trace(myStatementsSounds);
+			//trace("---------------");
+			//trace(myStatementsSounds);
 
 
 		}
@@ -123,7 +128,7 @@
 		 */
 		override public function Ready(e:Event):void {
 
-			/*trace("make sure the visuals are in the ready state"); 
+			/*//trace("make sure the visuals are in the ready state"); 
 			
 			reactMC.visible = false;
 			myText.htmlText = "";*/
@@ -139,14 +144,14 @@
 			var currentStatement=model.state.getCurrentStatementNo();
 
 			try {
-				trace("888888888888888 - about to close a sound %%%%%%");
+				//trace("888888888888888 - about to close a sound %%%%%%");
 				currentChannel.stop();
 				//lastSound.close(); 
 			} catch (e) {
-				trace(e);
+				//trace(e);
 			}
 
-			trace("The current statement is " + currentStatement);
+			//trace("The current statement is " + currentStatement);
 
 
 			if (myStatementsSounds[currentStatement]) {
@@ -157,7 +162,7 @@
 				
 				model.interactState.buildRespond();
 				
-				trace("what it started playing the date is "+model.state.getCurrentStatementNo());  
+				//trace("what it started playing the date is "+model.state.getCurrentStatementNo());  
 				if (mode=="debug") {
 					if (ReponseControl) {
 						model.interactState.Respond();//NEXT - move the trigger of this to a view
@@ -173,7 +178,7 @@
 
 
 		public function onComplete(e:Event):void {
-			trace("-------- Sounds has finished ------------");
+			//trace("-------- Sounds has finished ------------");
 
 			if (mode!="debug") {
 
@@ -184,7 +189,7 @@
 		}
 
 		override public function handleLoadedComplete(e:Event):void {
-			/* trace(" -------------------------- LOADED ----------------------");
+			/* //trace(" -------------------------- LOADED ----------------------");
 			 addChild(myClip); 
 			layout.SetScale(myClip, model.myData.imageData); //BUG - seem to stop the character working 
 			*/

@@ -251,8 +251,8 @@ package pipwerks {
 	
 		private function __displayDebugInfo(msg:String):void {
 			if(__debugActive){
-				//trace(msg);
-				ExternalInterface.call("pipwerks.UTILS.trace", msg);
+				////trace(msg);
+				ExternalInterface.call("pipwerks.UTILS.//trace", msg);
 			}
 		}
 		

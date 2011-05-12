@@ -28,8 +28,8 @@
 	 public function update(ResponseLabel) { 
 			
 			
-			//trace("The response was " + ResponseLabel);
-			//trace(model.state.getCurrentStatementAsText()); 
+			////trace("The response was " + ResponseLabel);
+			////trace(model.state.getCurrentStatementAsText()); 
 			
 			var Log:Array = new Array(); 
 			var now:Date = new Date();
@@ -40,8 +40,8 @@
 			Log.push(ResponseLabel); 
 			Logs.push(Log); 
 			
-			trace("---------- Logs Objects being outputted---------"); 
-			trace(Logs); 
+			//trace("---------- Logs Objects being outputted---------"); 
+			//trace(Logs); 
 			
 		
 		}

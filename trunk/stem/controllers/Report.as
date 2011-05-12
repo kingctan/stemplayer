@@ -14,7 +14,7 @@
 		public var ScoreModel;
 	
 		public function Report () {
-			trace("just built the Report object"); 
+			//trace("just built the Report object"); 
 			
 			
 		}
@@ -27,7 +27,7 @@
 			public function sendReport() {
 		
 			
-				trace("report is about to be sent"); 
+				//trace("report is about to be sent"); 
 				
 			}
 			
@@ -55,7 +55,7 @@
 			public function get tabSeperatedLogs():String {
 			
 				//BUG - if this longer than 4096 characters it will not be sent
-				trace("the logs are --------------------"); 
+				//trace("the logs are --------------------"); 
 				//Loop of the actual Log entries 
 				var logReport:String = ""; 
 				
@@ -63,7 +63,7 @@
 					
 					for (var a:int = 0; a < Logs[i].length; a++ ) {
 						
-						trace(Logs[i][a]);
+						//trace(Logs[i][a]);
 						logReport = logReport + Logs[i][a];
 						logReport = logReport + "\t"; 
 						

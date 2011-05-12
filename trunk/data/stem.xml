@@ -18,8 +18,7 @@
 
 <interaction>
 	<name type ="image" >Jane</name>
-	<visual  x="0" y="0">media/alison.swf</visual>
-
+	<visual x="0" y="0">media/alison.swf</visual>
 	<statements>
 	 <statement id="0" name="intro" x="200" y="80">	 
 	 <reaction x="550" y="250" anchor="bottomright"> 
@@ -54,7 +53,7 @@
 	 </statement>
 	 
  <statement id="2" name="intro"  x="200" y="80">
-	 <reaction x="550" y="250" anchor="bottomright" background="media/reaction-bg-1.swf">Well there is two poles, I think the one near the road is about 110m meters away.  We have some plans and other information that might be useful ?</reaction>
+	 <reaction x="550" y="250" anchor="bottomright" >Well there is two poles, I think the one near the road is about 110m meters away.  We have some plans and other information that might be useful ?</reaction>
 	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
 				<choice branch="5"><statement>That great, I might need to come out have a look as well. </statement>
 					<scores>

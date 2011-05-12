@@ -41,7 +41,7 @@
 		private var mode:String="debugNO";//when this set to debug you can skip thru the choices quickly  
 		
 		public function VideoInteractionViewState (m,rc):void {
-			trace("######## Video InteractionViewState has been made");
+			//trace("######## Video InteractionViewState has been made");
 			this.setup(m,rc);//start the loading 
 
 		}
@@ -55,7 +55,7 @@
 		}
 
 		public function buildReady() {
-			trace("###### Building the Video's");
+			//trace("###### Building the Video's");
 
 			myClip = new MovieClip(); 
 			addChild(myClip);
@@ -84,33 +84,33 @@
 
 			while (i < model.myData.getStatementLength()) {
 
-				//trace(model.myData.getStatementAtasXML(i)); 
+				////trace(model.myData.getStatementAtasXML(i)); 
 				var statement:XML=model.myData.getStatementAtasXML(i);
 				i++;
 
-				//trace(statement);
+				////trace(statement);
 
 				for each (var bit:XML in statement) {
 					var currentReactions:Array = new Array();
 
 					for each (var react:XML in bit.reaction) {
-						//trace("search for the video's");	
-						//trace(react.@video.toString());
+						////trace("search for the video's");	
+						////trace(react.@video.toString());
 
 						if (react.@video.toString()!="") {
-							trace("yes it has a video");
+							//trace("yes it has a video");
 							currentReactions.push(react.@video.toString());
 						}
 
-						//trace(currentReactions);
+						////trace(currentReactions);
 
 					}
 
 				}
 				myStatementsVideos.push(currentReactions);
 			}
-			//trace("---------------");
-			//trace(myStatementsVideos);
+			////trace("---------------");
+			////trace(myStatementsVideos);
 
 
 		}
@@ -136,7 +136,7 @@
 		 */
 		override public function Ready(e:Event):void {
 
-			/*trace("make sure the visuals are in the ready state"); 
+			/*//trace("make sure the visuals are in the ready state"); 
 			
 			reactMC.visible = false;
 			myText.htmlText = "";*/
@@ -159,7 +159,11 @@
 				
 				//currentVideo.clear();// BUG - WORKAROUND if the video moves position and this flash this is a way around that.
 				ns.play(nextVideo);
-			
+				try { 
+				model.loadManager.add (ns);
+				} catch ( e:Error ) {
+					trace ( "Error occured while trying to load the video." );
+				}
 				ns.addEventListener(NetStatusEvent.NET_STATUS, onStatus); //set the height and width to the encoded width once the actual video is loaded. 
 				//That function also watch to see if the video has finished playing '
 				
@@ -179,41 +183,41 @@
 		}
 		
 		private function onMetaData(data:Object) {
-			//trace(data.duration);
+			////trace(data.duration);
 			_currentDuration = data.duration; 
 		}
 		
 		private function onStatus(event:NetStatusEvent):void {
-			//trace(event);
+			////trace(event);
 			
 			/*for(var val:* in event.info){
-				trace('   [' + typeof(event.info[val]) + '] ' + val + ' => ' + event.info[val]);
+				//trace('   [' + typeof(event.info[val]) + '] ' + val + ' => ' + event.info[val]);
 			}*/
 
 			
 			if(event.info.code == "NetStream.Buffer.Full") {
-				trace("got the buffer full status");
+				//trace("got the buffer full status");
 			}
 			
-			//trace(ns.time);
+			////trace(ns.time);
 			//if (Math.round(ns.bufferLength) > Math.round(ns.bufferTime)) {//this could be a bit of a problem 
 			if(event.info.code == "NetStream.Buffer.Full") {
 			//if ((ns.time) > (ns.bufferTime)) {//this could be a bit of a problem 
 
-				trace("now it's loaded");
+				//trace("now it's loaded");
 				//resize it the encoded size 
 				setPosAndWidth();
 			
 			}
-			//trace (_currentDuration); 
+			////trace (_currentDuration); 
 			
 			if(Math.round(ns.time) > Math.round(_currentDuration)) {
-				//trace("video has finished playing"); 
+				////trace("video has finished playing"); 
 				onComplete();
 			}
 			
-			//trace(ns.time);
-			//trace("Status event change ..."); 
+			////trace(ns.time);
+			////trace("Status event change ..."); 
 		}
 		
 		private function setPosAndWidth():void {
@@ -233,7 +237,7 @@
 		} 
 		
 		public function onComplete():void {
-			trace("-------- Video has finished playing ------------");
+			//trace("-------- Video has finished playing ------------");
 				
 			if (mode!="debug") {
 
@@ -244,7 +248,7 @@
 		}
 
 		override public function handleLoadedComplete(e:Event):void {
-			/* trace(" -------------------------- LOADED ----------------------");
+			/* //trace(" -------------------------- LOADED ----------------------");
 			 addChild(myClip); 
 			layout.SetScale(myClip, model.myData.imageData); //BUG - seem to stop the character working 
 			*/
