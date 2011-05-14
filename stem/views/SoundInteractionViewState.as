@@ -72,6 +72,7 @@
 							var thisSound = new Sound();
 							thisSound.load(new URLRequest(react.@sound.toString()));
 							try { 
+								
 								model.loadManager.add (thisSound);
 							} catch (e:Error) {
 								trace ( "An error occured while trying to load the sound.");

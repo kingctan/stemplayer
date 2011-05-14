@@ -11,6 +11,7 @@
 		public const INTERACTION_READY = 1;
 		public const MODEL_STATE_CHANGED = 2;
 		public const MODEL_STATE_CHANGING = 3; 
+		public static const EXTERNAL_LOADING:String = "externalLoading";
 		
 		//This is our actual states 
 		public const STATE_REACT = 4;
@@ -20,7 +21,6 @@
 		public const SCORE_UPDATE = 7; 
 		public const SCORE_DISPLAY = 8; 
 		public const SCORE_DISPLAY_UPDATE = 9; 
-
 
 		public const HELP_UPDATE = 10; 
 
