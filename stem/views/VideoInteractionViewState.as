@@ -1,18 +1,19 @@
 ﻿package stem.views{
 
 	import fl.core.UIComponent;
-	import flash.display.*;
-	import flash.net.*;
-	import flash.events.*;
-	import flash.text.*;
-	import flash.media.*;
 	
-	import util.*;
-
+	import flash.display.*;
+	import flash.events.*;
+	import flash.media.*;
 	import flash.media.Sound;
 	import flash.media.SoundChannel;
-
+	import flash.net.*;
 	import flash.net.URLRequest;
+	import flash.text.*;
+	
+	import stem.model.Model;
+	
+	import util.*;
 	
 
 
@@ -40,18 +41,12 @@
 
 		private var mode:String="debugNO";//when this set to debug you can skip thru the choices quickly  
 		
-		public function VideoInteractionViewState (m,rc):void {
-			//trace("######## Video InteractionViewState has been made");
-			this.setup(m,rc);//start the loading 
-
+		public function VideoInteractionViewState (m:Model, rc:Boolean):void {			
+			this.setup (m,rc);
 		}
-
-
-		override public function load():void {
-
-			//buildBackground(); 
-			buildReady();
-			//loadReact();
+		
+		override public function load():void {			 
+			buildReady();			
 		}
 
 		public function buildReady() {
@@ -87,23 +82,17 @@
 				////trace(model.myData.getStatementAtasXML(i)); 
 				var statement:XML=model.myData.getStatementAtasXML(i);
 				i++;
-
-				////trace(statement);
-
 				for each (var bit:XML in statement) {
 					var currentReactions:Array = new Array();
 
 					for each (var react:XML in bit.reaction) {
-						////trace("search for the video's");	
-						////trace(react.@video.toString());
-
-						if (react.@video.toString()!="") {
-							//trace("yes it has a video");
+						
+						trace ( react );
+						
+						if (react.@video.toString()!="") {							
+							trace("yes it has a video");
 							currentReactions.push(react.@video.toString());
 						}
-
-						////trace(currentReactions);
-
 					}
 
 				}
@@ -116,20 +105,13 @@
 		}
 
 		public function loadReact():void {
-
 			
-	
-
 		}
 
 		public function buildReact(e:Event):void {
-
-
+			
 		}
-
-
-
-
+		
 		/**
 		 * Puts the interaction back into the Ready static state 
 		 * @parame - the event that his trigger this - it's often the timer 

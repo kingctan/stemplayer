@@ -35,7 +35,8 @@
 	
 	 <statement id="1"   name="intro"  x="200" y="80">
 	 
-	 <reaction x="550" y="250" anchor="bottomright"> Hi There! How are you doing? </reaction>
+	 <reaction x="550" y="250" anchor="bottomright" src="http://files.chitchu.net/movies/Trailer_3.flv">
+	 </reaction>
 	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
 				<choice branch="3"><statement>Do you get along with your neighbors ? maybe we could use their poles?
  </statement>
@@ -67,7 +68,7 @@
 	 
 	
  <statement id="3" name="intro" x="200" y="80">
-	 <reaction x="550" y="250" anchor="bottomright" background="media/reaction-bg-1.swf">	Yes, we get along with them. I'm sure they would be Ok about it. There second pole is close to our house. That should make it cheaper. </reaction>
+	 <reaction x="550" y="250" anchor="bottomright" src="media/reaction-bg-1.swf">	Yes, we get along with them. I'm sure they would be Ok about it. There second pole is close to our house. That should make it cheaper. </reaction>
 	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
 	  
 	
@@ -90,7 +91,7 @@
 	 </statement> 
 	 
  <statement id="4" name="" x="200" y="80" >
-	 <reaction x="550" y="250" anchor="bottomright" background="media/reaction-bg-1.swf">That's great</reaction>
+	 <reaction x="550" y="250" anchor="bottomright" src="media/reaction-bg-1.swf">That's great</reaction>
 	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
 				<choice branch="end"><statement>OK,I'll have a look a the plans now. Goodbye</statement>
 					<scores>
@@ -101,7 +102,7 @@
 	 </statement> 
 
  <statement id="5" name="intro" x="200" y="80">
-	 <reaction x="550" y="250" anchor="bottomright" background="media/reaction-bg-1.swf">	Oh, so you can't tell how much it is over the phone ?</reaction>
+	 <reaction x="550" y="250" anchor="bottomright" src="media/reaction-bg-1.swf">	Oh, so you can't tell how much it is over the phone ?</reaction>
 	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
 		<choice branch="6"><statement>No I need to check with Aurora.  We need to fill out a Preliminary Enquiry form. </statement>
 					<scores>
@@ -114,7 +115,7 @@
 
 
  <statement id="6" name="intro" x="200" y="80">
-	 <reaction x="550" y="250" anchor="bottomright" background="media/reaction-bg-1.swf">OK, that sounds good. I'll have a look a the plans now. Goodbye </reaction>
+	 <reaction x="550" y="250" anchor="bottomright" src="media/reaction-bg-1.swf">OK, that sounds good. I'll have a look a the plans now. Goodbye </reaction>
 	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
 				<choice branch="end"><statement>Goodbye </statement>
 					<scores>
