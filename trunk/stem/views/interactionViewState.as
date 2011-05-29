@@ -39,13 +39,13 @@
 				c.load();
 			}
 		}
-
-
+		 
 		public function buildReady() {
 			for each (var c in aChildren) {
 				c.buildReady();
 			}
 		}
+		
 		public function loadReact():void {
 
 			for each (var c in aChildren) {
@@ -53,21 +53,19 @@
 			}
 
 		}
-
+		
 		public function buildReact(e:Event):void {
 
 			for each (var c in aChildren) {
 				c.React();
 			}
 		}
-
-
-
-
+		
 		/**
 		 * Puts the interaction back into the Ready static state 
 		 * @parame - the event that his trigger this - it's often the timer 
 		 */
+		
 		 public function Ready(e:Event):void {
 
 			for each (var c in aChildren) {
@@ -87,14 +85,7 @@
 				c.React();
 			}
 
-
 		}
-
-
-
-
-
-
 	}
 
 }
