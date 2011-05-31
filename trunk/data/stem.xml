@@ -83,15 +83,11 @@
 						<factor name="Supplier Requirements" score="-3"></factor>
 					</scores>
 				</choice>
-				
-				
-				
-				
 			</responses>
 	 </statement> 
 	 
  <statement id="4" name="" x="200" y="80" >
-	 <reaction x="550" y="250" anchor="bottomright" src="media/reaction-bg-1.swf">That's great</reaction>
+	 <reaction x="550" y="250" anchor="bottomright" src="media/reaction-bg-1.swf">This is statement 4, and it is working!</reaction>
 	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
 				<choice branch="end"><statement>OK,I'll have a look a the plans now. Goodbye</statement>
 					<scores>

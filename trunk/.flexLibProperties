@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="false" version="3">
+  <includeClasses>
+    <classEntry path="com.sproutlabs.stemplayer.events.ReactionViewEvent"/>
+    <classEntry path="com.sproutlabs.stemplayer.view.controls.PreloaderBar"/>
+    <classEntry path="com.sproutlabs.stemplayer.view.controls.ReactionView"/>
+    <classEntry path="com.sproutlabs.stemplayer.view.controls.VideoChatBubble"/>
+    <classEntry path="helper.Help"/>
+    <classEntry path="helper.Helper"/>
+    <classEntry path="helper.HelperModel"/>
+    <classEntry path="helper.HelperView"/>
+    <classEntry path="pipwerks.SCORM"/>
+    <classEntry path="stem.Main"/>
+    <classEntry path="stem.Stem"/>
+    <classEntry path="stem.controllers.LoaderXML"/>
+    <classEntry path="stem.controllers.Report"/>
+    <classEntry path="stem.controllers.ReportSCORM"/>
+    <classEntry path="stem.model.BuildState"/>
+    <classEntry path="stem.model.Interaction"/>
+    <classEntry path="stem.model.InteractionData"/>
+    <classEntry path="stem.model.InteractionEvents"/>
+    <classEntry path="stem.model.InteractionI"/>
+    <classEntry path="stem.model.LoadManager"/>
+    <classEntry path="stem.model.LogModel"/>
+    <classEntry path="stem.model.LogModelAbstract"/>
+    <classEntry path="stem.model.Model"/>
+    <classEntry path="stem.model.ResponseModel"/>
+    <classEntry path="stem.model.ScoreModel"/>
+    <classEntry path="stem.views.BuildViewState"/>
+    <classEntry path="stem.views.ImageInteractionViewState"/>
+    <classEntry path="stem.views.InteractionViewStateAbstract"/>
+    <classEntry path="stem.views.MultiLineCell"/>
+    <classEntry path="stem.views.ResponseView"/>
+    <classEntry path="stem.views.ScoreView"/>
+    <classEntry path="stem.views.SoundInteractionViewState"/>
+    <classEntry path="stem.views.VideoInteractionViewState"/>
+    <classEntry path="stem.views.View"/>
+    <classEntry path="stem.views.ViewStateI"/>
+    <classEntry path="stem.views.interactionViewState"/>
+    <classEntry path="util.Background"/>
+    <classEntry path="util.Layout"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>
