@@ -96,6 +96,7 @@ sound and other interactions can be added to the background.</li>
 The *message* element contains the other elements that control the scoring and
 feedback systems of STEM.
 
+
 ==Children==
 [#<padding> <padding>]<br>
 [#<finalscore> <finalscore>]<br>
@@ -117,6 +118,7 @@ between the vertical elements.
 
 ==Attributes==
 <li>*x* The amount of vertical padding between parts in the message box. This is normally set to 10.</li>
+
 
 ==Parent==
 [#<messages> <messages>]
@@ -142,7 +144,7 @@ progress showing during the whole interaction.
 
 ==Example==
 {{{
-<finalscore x="420" y="50" displayduring="no">Score</finalscore>
+<finalscore x="420" y="50" width="100" height="110" background="0x000000" alpha =".8" color="0xFFFFFF" displayduring="no">Score</finalscore>
 }}}
 The score is shown in the top right hand corner only when the end branch is
 chosen by the user and the word *Score* is used in the label.
@@ -151,6 +153,11 @@ chosen by the user and the word *Score* is used in the label.
 <ul>
 <li>*x* The x position of the score.</li>
 <li>*y* The y position of the score.</li>
+<li> *width:* Sets the width of the score. Default is 300/ OPTIONAL </li>
+<li> *height*: Sets the height of of the score. Default is 300.  OPTIONAL </li>
+<li> *background*: Sets the background colour of the score element; this is an RBG colour in written in HEX. If this empty then there is not background color Default is black.  OPTIONAL </li>
+<li> *alpha:* Sets the transparency of the element. Because the score element is often put on top of the other elements, this can useful. Default is .5 OPTIONAL </li>
+<li> *colour:* Sets the colour of the text; this is an RBG colour in written in HEX. Default is white OPTIONAL </li>
 <li>*displayduring*. This can be set to yes or no. If you only want the score to show at
 the end, it should be set to *displayduring=no*.</li>
 </ul>
