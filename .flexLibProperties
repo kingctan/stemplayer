@@ -39,6 +39,8 @@
     <classEntry path="stem.views.interactionViewState"/>
     <classEntry path="util.Background"/>
     <classEntry path="util.Layout"/>
+    <classEntry path="stem.views.ResultBoxView"/>
+    <classEntry path="stem.model.ResultBoxStyleVO"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>
