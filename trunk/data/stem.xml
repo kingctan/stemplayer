@@ -5,7 +5,7 @@
 </space>
 <messages>
 	<padding x="10"></padding>
-	<finalscore x="420" y="50" displayduring="yes">Hi, Score</finalscore>
+	<finalscore x="420" y="50" displayduring="yes">Score</finalscore>
 	<finalfactors display="no"></finalfactors>	
 </messages>
 <factors>
@@ -18,7 +18,7 @@
 
 <interaction>
 	<name type ="image" >Jane</name>
-	<visual x="0" y="0">media/alison.swf</visual>
+	<visual x="100" y="100">media/alison.swf</visual>
 	<statements>
 	 <statement id="0" name="intro" x="200" y="80">	 
 	 <reaction x="550" y="250" anchor="bottomright"> 
