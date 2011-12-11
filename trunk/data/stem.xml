@@ -1,135 +1,67 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <stem>
-<space>
-	<background src="media/foyer.swf" x="0" y="0"> </background>	
-</space>
-<messages>
-	<padding x="10"></padding>
-	<finalscore x="420" y="50" displayduring="yes">Score</finalscore>
-	<finalfactors display="no"></finalfactors>	
-</messages>
-<factors>
-	 <factor>Supplier Requirements</factor>
 
-</factors>
-<reports>
-	<report>scorm</report>
-</reports>
-
-<interaction>
-	<name type ="image" >Jane</name>
-	<visual x="100" y="100">media/alison.swf</visual>
-	<statements>
-	 <statement id="0" name="intro" x="200" y="80">	 
-	 <reaction x="550" y="250" anchor="bottomright"> 
-	 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-	 </reaction>
-	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
-				<choice branch="1"><statement>Do you have pole out the front</statement>
-					<scores>
-						<factor name="Supplier Requirements" score="1"></factor>
-					</scores>
-				</choice>
-			</responses>
-	 </statement>
-	
-	 <statement id="1"   name="intro"  x="200" y="80">
-	 
-	 <reaction x="550" y="250" anchor="bottomright" src="media/reaction-bg-1.swf">
-	 </reaction>
-	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
-				<choice branch="3"><statement>Do you get along with your neighbors ? maybe we could use their poles?
- </statement>
-					<scores>
-						<factor name="Supplier Requirements" score="0"></factor>
-					</scores>
-				</choice>
-
-				<choice branch="2"><statement>Can you tell me a bit more where the poles are? </statement>
-					<scores>
-						<factor name="Supplier Requirements" score="2"></factor>
-					</scores>
-				</choice>
-							
-			</responses>
-	 </statement>
-	 
- <statement id="2" name="intro"  x="200" y="80">
-	 <reaction x="550" y="250" anchor="bottomright" >Well there is two poles, I think the one near the road is about 110m meters away.  We have some plans and other information that might be useful ?</reaction>
-	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
-				<choice branch="5"><statement>That great, I might need to come out have a look as well. </statement>
-					<scores>
-						<factor name="Supplier Requirements" score="2"></factor>
-					</scores>
-				</choice>
-			</responses>
-	 </statement> 
-	 
-	 
-	
- <statement id="3" name="intro" x="200" y="80">
-	 <reaction x="550" y="250" anchor="bottomright" src="media/reaction-bg-1.swf">	Yes, we get along with them. I'm sure they would be Ok about it. There second pole is close to our house. That should make it cheaper. </reaction>
-	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
-	  
-	
-	<choice branch="2"><statement>Can you tell me a bit more where the poles are? </statement>
-					<scores>
-						<factor name="Supplier Requirements" score="2"></factor>
-					</scores>
-				</choice>
+	<space>
+		<background src="assets/library/backgrounds/foyer.swf" x="0" y="0"> </background>	
+	</space>
+	<messages>
+		<padding x="0"></padding>
+		<finalscore x="0" y="0" displayduring="yes">Score</finalscore>
+		<finalfactors display="0"></finalfactors>	
+	</messages>
+	<factors>
+		<factor>Score</factor>
+	</factors>
+	<reports>
+		<report>none</report>
+	</reports>
+	<interaction>
+		<name type ="image">Jane</name>
+		<visual  x="0" y="0">assets/library/people/vectordrawning/male/alastair_full.png</visual>
+		<statements>
+			
+			
+			
+				<statement id="New branch" name="New branch" x="100" y="100" >
+					<reaction image="assets/library/people/vectordrawning/male/alastair_face.png" ><![CDATA[<p>The text that will show. </p>]]></reaction>
+					
+						<responses x="0" y="290" width="600" height="140" choiceheight="20">
+						
+						
+						  	<choice branch="New branch">
+								<statement><![CDATA[The fist choice in the worked ]]></statement>
+									<scores>
+										<factor name="Score"  score="1"></factor>
+									</scores>
+						</choice>
+						
+						
+						
+						  	<choice branch="New branch">
+								<statement><![CDATA[Second Choice]]></statement>
+									<scores>
+										<factor name="Score"  score="1"></factor>
+									</scores>
+						</choice>
+						
+						
+						
+						</responses>
+					 </statement>
+				 
+					
 				
-				 <choice branch="4"><statement>Jobs like this cost normally cost about $5000 and there is a few things we need to talk to Aurora about.  </statement>
-					<scores>
-						<factor name="Supplier Requirements" score="-3"></factor>
-					</scores>
-				</choice>
-			</responses>
-	 </statement> 
-	 
- <statement id="4" name="" x="200" y="80" >
-	 <reaction x="550" y="250" anchor="bottomright" src="media/reaction-bg-1.swf">This is statement 4, and it is working!</reaction>
-	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
-				<choice branch="end"><statement>OK,I'll have a look a the plans now. Goodbye</statement>
-					<scores>
-						<factor name="Supplier Requirements" scozre="0"></factor>
-					</scores>
-				</choice>
-			</responses>
-	 </statement> 
-
- <statement id="5" name="intro" x="200" y="80">
-	 <reaction x="550" y="250" anchor="bottomright" src="media/reaction-bg-1.swf">	Oh, so you can't tell how much it is over the phone ?</reaction>
-	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
-		<choice branch="6"><statement>No I need to check with Aurora.  We need to fill out a Preliminary Enquiry form. </statement>
-					<scores>
-						<factor name="Supplier Requirements" score="4"></factor>
-					</scores>
-				</choice>
-				
-		</responses>
-	 </statement> 
-
-
- <statement id="6" name="intro" x="200" y="80">
-	 <reaction x="550" y="250" anchor="bottomright" src="media/reaction-bg-1.swf">OK, that sounds good. I'll have a look a the plans now. Goodbye </reaction>
-	 	<responses x="0" y="290" width="600" height="140" choiceheight="20">
-				<choice branch="end"><statement>Goodbye </statement>
-					<scores>
-						<factor name="Supplier Requirements" score="1"></factor>
-					</scores>
-				</choice>
-			</responses>
-	 </statement> 
-
-
 	</statements> 	
 </interaction>
 
 	<helper> 
-		<help id="0" type="text" x="100" y="100" width="300" height="20" background="0x000000" alpha =".8" color="0xFFFFFF">You shouldn't be giving advice like that out without checking with Aurora first. </help>
-
-<help id="1" x="200" y="200" width="100" height="110" background="0x000000" alpha =".8" color="0xFFFFFF">You shouldn't be giving advice like that out without checking with Aurora first. </help>
+		<help id="0" type="text" x="100" y="100" width="300" height="20" background="0x000000" alpha =".8" color="0xFFFFFF"></help>
+		<help id="1" type="text" x="100" y="100" width="300" height="20" background="0x000000" alpha =".8" color="0xFFFFFF"></help>
 
 
 	</helper>
 </stem>
+
+
+
+
