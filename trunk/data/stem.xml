@@ -6,7 +6,7 @@
 	</space>
 	<messages>
 		<padding x="0"></padding>
-		<finalscore x="0" y="0" displayduring="yes">Score</finalscore>
+		<finalscore x="0" y="0" background="0x000000" alpha=".8" color="0xFFFFFF" displayduring="yes">Score</finalscore>
 		<finalfactors display="0"></finalfactors>	
 	</messages>
 	<factors>
@@ -22,8 +22,8 @@
 			
 			
 			
-				<statement id="New branch" name="New branch" x="100" y="100" >
-					<reaction image="assets/library/people/vectordrawning/male/alastair_face.png" ><![CDATA[<p>The text that will show. </p>]]></reaction>
+				<statement id="New branch" name="New branch" >
+					<reaction  x="200" y="200" image="assets/library/people/vectordrawning/male/alastair_face.png" ><![CDATA[<p>The text that will show. </p>]]></reaction>
 					
 						<responses x="0" y="290" width="600" height="140" choiceheight="20">
 						
